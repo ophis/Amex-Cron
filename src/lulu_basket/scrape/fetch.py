@@ -9,7 +9,7 @@ from lulu_basket.scrape.parse import BASE_URL
 
 HttpGet = Callable[[str], tuple[int, str]]
 
-BACKOFF_SECONDS = (5, 15)
+BACKOFF_SECONDS = (5, 15, 45)
 ATTEMPTS = len(BACKOFF_SECONDS) + 1
 TIMEOUT_SECONDS = 30
 _SITE = urlsplit(BASE_URL)
@@ -60,7 +60,7 @@ class Fetcher:
                     if not _is_access_denied(text):
                         return text
                     blocked, failure = True, "Access Denied"
-                elif status in (403, 429) or 500 <= status < 600:
+                elif status in (400, 403, 429) or 500 <= status < 600:
                     blocked, failure = status == 403, f"HTTP {status}"
                 else:
                     raise ScrapeError(f"request failed: HTTP {status}: {url}")
