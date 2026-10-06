@@ -170,13 +170,13 @@ def test_default_transport_is_the_curl_session(fake_site, tmp_path, monkeypatch,
 def case_blocked_403(site):
     stock(site, ("p1", "Define Jacket", 50))
     site.responses[PRODUCT_URL] = (403, "Forbidden")
-    return site.http_get, f"error: blocked by site after 4 attempts: {PRODUCT_URL}"
+    return site.http_get, f"error: blocked by site after 3 attempts: {PRODUCT_URL}"
 
 
 def case_access_denied_page(site):
     stock(site, ("p1", "Define Jacket", 50))
     site.responses[PRODUCT_URL] = (200, "<html>Access Denied</html>")
-    return site.http_get, f"error: blocked by site after 4 attempts: {PRODUCT_URL}"
+    return site.http_get, f"error: blocked by site after 3 attempts: {PRODUCT_URL}"
 
 
 def case_transport_error(site):
@@ -283,14 +283,14 @@ def test_failure_creates_no_snapshot(fake_site, tmp_path, capsys):
     assert os.listdir(tmp_path) == []
 
 
-def test_retries_wait_5_then_15_then_45_seconds_before_failing(fake_site, tmp_path, capsys):
+def test_retries_wait_5_then_15_seconds_before_failing(fake_site, tmp_path, capsys):
     http_get, _ = case_blocked_403(fake_site)
     sleeps = []
     invoke(
         capsys, "scrape", "--snapshot", str(tmp_path / "s.json"), "--delay", "0",
         http_get=http_get, sleeps=sleeps,
     )
-    assert sleeps[-3:] == [5, 15, 45]
+    assert sleeps[-2:] == [5, 15]
 
 
 @pytest.mark.parametrize("command", ["scrape", "run"])

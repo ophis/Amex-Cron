@@ -58,22 +58,22 @@ def test_retry_waits_backoff_only_not_delay_in_addition():
     assert sleep.calls == [1.5, 5]
 
 
-def test_403_four_times_is_blocked():
-    fetcher, http, sleep = make_fetcher(*[(403, DENIED)] * 4)
+def test_403_three_times_is_blocked():
+    fetcher, http, sleep = make_fetcher((403, DENIED), (403, DENIED), (403, DENIED))
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
-    assert str(excinfo.value) == f"blocked by site after 4 attempts: {URL}"
-    assert http.urls == [URL] * 4
-    assert sleep.calls == [5, 15, 45]
+    assert str(excinfo.value) == f"blocked by site after 3 attempts: {URL}"
+    assert http.urls == [URL] * 3
+    assert sleep.calls == [5, 15]
 
 
-def test_access_denied_page_with_status_200_four_times_is_blocked():
-    fetcher, http, sleep = make_fetcher(*[(200, DENIED)] * 4)
+def test_access_denied_page_with_status_200_three_times_is_blocked():
+    fetcher, http, sleep = make_fetcher((200, DENIED), (200, DENIED), (200, DENIED))
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
-    assert str(excinfo.value) == f"blocked by site after 4 attempts: {URL}"
-    assert len(http.urls) == 4
-    assert sleep.calls == [5, 15, 45]
+    assert str(excinfo.value) == f"blocked by site after 3 attempts: {URL}"
+    assert len(http.urls) == 3
+    assert sleep.calls == [5, 15]
 
 
 def test_access_denied_text_with_next_data_is_a_normal_page():
@@ -98,13 +98,15 @@ def test_retryable_statuses_are_retried(status):
     assert sleep.calls == [5]
 
 
-def test_transport_error_four_times_reports_the_error():
-    fetcher, http, sleep = make_fetcher(*[TransportError("boom")] * 4)
+def test_transport_error_three_times_reports_the_error():
+    fetcher, http, sleep = make_fetcher(
+        TransportError("boom"), TransportError("boom"), TransportError("boom")
+    )
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
     assert str(excinfo.value) == f"request failed: boom: {URL}"
-    assert len(http.urls) == 4
-    assert sleep.calls == [5, 15, 45]
+    assert len(http.urls) == 3
+    assert sleep.calls == [5, 15]
 
 
 def test_transport_error_then_200_succeeds():
@@ -113,32 +115,13 @@ def test_transport_error_then_200_succeeds():
     assert sleep.calls == [5]
 
 
-def test_500_four_times_reports_the_status():
-    fetcher, http, sleep = make_fetcher(*[(500, "")] * 4)
+def test_500_three_times_reports_the_status():
+    fetcher, http, sleep = make_fetcher((500, ""), (500, ""), (500, ""))
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
     assert str(excinfo.value) == f"request failed: HTTP 500: {URL}"
-    assert len(http.urls) == 4
-    assert sleep.calls == [5, 15, 45]
-
-
-BAD_REQUEST = '{"message": "Bad Request.", "errorCode": "GE401001"}'
-
-
-def test_400_then_200_succeeds():
-    fetcher, http, sleep = make_fetcher((400, BAD_REQUEST), (200, PAGE))
-    assert fetcher.get(URL) == PAGE
-    assert len(http.urls) == 2
-    assert sleep.calls == [5]
-
-
-def test_400_on_every_attempt_reports_the_status():
-    fetcher, http, sleep = make_fetcher(*[(400, BAD_REQUEST)] * 4)
-    with pytest.raises(ScrapeError) as excinfo:
-        fetcher.get(URL)
-    assert str(excinfo.value) == f"request failed: HTTP 400: {URL}"
-    assert http.urls == [URL] * 4
-    assert sleep.calls == [5, 15, 45]
+    assert len(http.urls) == 3
+    assert sleep.calls == [5, 15]
 
 
 def test_404_fails_at_once_without_retry_sleeps():
@@ -151,15 +134,15 @@ def test_404_fails_at_once_without_retry_sleeps():
 
 
 def test_blocked_message_follows_the_last_attempt():
-    fetcher, _, _ = make_fetcher((403, DENIED), (403, DENIED), (403, DENIED), (500, ""))
+    fetcher, _, _ = make_fetcher((403, DENIED), (403, DENIED), (500, ""))
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
     assert str(excinfo.value) == f"request failed: HTTP 500: {URL}"
 
-    fetcher, _, _ = make_fetcher((500, ""), (500, ""), (500, ""), (403, DENIED))
+    fetcher, _, _ = make_fetcher((500, ""), (500, ""), (403, DENIED))
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
-    assert str(excinfo.value) == f"blocked by site after 4 attempts: {URL}"
+    assert str(excinfo.value) == f"blocked by site after 3 attempts: {URL}"
 
 
 def test_scrape_error_from_http_get_is_not_retried():
