@@ -2,3 +2,7 @@
 .env
 __pycache__/
 node_modules/
+docs/.autopilot/*.r[0-9]*.md
+snapshot.json
+.venv/
+.pytest_cache/

@@ -1,0 +1,670 @@
+{
+ "page": "/p/[...slug]",
+ "query": {
+  "slug": [
+   "everywhere-crossbody-bag-2l-metal-hardware",
+   "n4g2nr4v61"
+  ]
+ },
+ "buildId": "yQtXoWd58Xk39hpBndObg",
+ "isFallback": false,
+ "locale": "en-us",
+ "props": {
+  "pageProps": {
+   "awsRegion": "<trimmed>",
+   "akamaiDevice": "<trimmed>",
+   "configs": "<trimmed>",
+   "isAlpineEnabled": "<trimmed>",
+   "locale": "<trimmed>",
+   "regionalBannerProps": "<trimmed>",
+   "SSRLDFlags": "<trimmed>",
+   "fontDomain": "<trimmed>",
+   "isAlpineRequested": "<trimmed>",
+   "isAlpineLayoutModuleEnabled": "<trimmed>",
+   "isAlpineStoryModuleEnabled": "<trimmed>",
+   "usesAlpineFonts": "<trimmed>",
+   "ssrFlags": "<trimmed>",
+   "alpineAccelerationPages": "<trimmed>",
+   "legacyStoryPages": "<trimmed>",
+   "transPerfectHeader": "<trimmed>",
+   "dehydratedState": {
+    "queries": [
+     {
+      "queryKey": [
+       "navData",
+       "alpine",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "pdpContentfulTranslations",
+       "v1",
+       "en-us",
+       "preview=false"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "SeoFeaturedCategoryPDPQuery",
+       "en-us",
+       "n4g2nr4v61"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": {
+        "allInseam": [],
+        "allLocalePids": {
+         "siteId": "",
+         "pdpUrl": "/p/everywhere-crossbody-bag-2l-metal-hardware/n4g2nr4v61",
+         "categoryUnifiedId": "bags",
+         "productUnifiedId": "Everywhere-Crossbody-Bag-2L-Metal-Hardware"
+        },
+        "allSize": [
+         {
+          "key": "OSFA",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "UNIVERSAL",
+            "type": "",
+            "label": "ONE SIZE"
+           }
+          ]
+         }
+        ],
+        "colorAttributes": [],
+        "colorDriver": [
+         {
+          "color": "76940",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         {
+          "color": "68461",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         {
+          "color": "42797",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         {
+          "color": "3385",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         {
+          "color": "70365",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         {
+          "color": "73629",
+          "sizes": [
+           "ONE SIZE"
+          ]
+         },
+         "<more trimmed>"
+        ],
+        "colors": [
+         {
+          "code": "76940",
+          "name": "Beach Ball Blue/Silver",
+          "slug": "BEBA/SLVR",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/76940",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "42797",
+          "name": "Light Ivory/Gold",
+          "slug": "LTIV/GOLD",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/42797",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "73629",
+          "name": "Faint Lavender/Gold",
+          "slug": "FTLV/GOLD",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/73629",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "70365",
+          "name": "Raspberry Coulis/Silver",
+          "slug": "RBCO/SLVR",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/70365",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "3385",
+          "name": "Black/Gold",
+          "slug": "BLK/GOLD",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/3385",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "68461",
+          "name": "Legacy Green/Silver",
+          "slug": "LGYG/SLVR",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/68461",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         "<more colors trimmed>"
+        ],
+        "highlights": [
+         {
+          "highlightType": "trending",
+          "highlightLabel": "Trending",
+          "highlightIconApp": "trending_highlight_icon",
+          "priority": 9,
+          "startDate": "2024-10-08",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "warmthIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         },
+         {
+          "highlightType": "popular_gift",
+          "highlightLabel": "Best Gift",
+          "highlightIconApp": "best_gift_icon",
+          "priority": 10,
+          "startDate": "2023-08-01",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "giftBoxIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         }
+        ],
+        "productAttributes": {
+         "productContentCare": [],
+         "productContentFeature": [],
+         "productContentFabric": null,
+         "productContentWhyWeMadeThis": []
+        },
+        "productCarousel": [
+         {
+          "color": {
+           "code": "76940",
+           "name": "Beach Ball Blue/Silver",
+           "slug": "BEBA/SLVR",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/76940",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LU9C80S-076940",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LU9C80S_076940_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": false,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LU9C80S_076940_1",
+            "posterImageUrl": null,
+            "alt": "Beach Ball Blue/Silver"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "",
+           "modelIsWearing": [],
+           "shopThisLook": []
+          },
+          "pcmMediaInfo": []
+         },
+         {
+          "color": {
+           "code": "42797",
+           "name": "Light Ivory/Gold",
+           "slug": "LTIV/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/42797",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LU9C80S-042797",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LU9C80S_042797_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": false,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LU9C80S_042797_1",
+            "posterImageUrl": null,
+            "alt": "Light Ivory/Gold"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "",
+           "modelIsWearing": [],
+           "shopThisLook": []
+          },
+          "pcmMediaInfo": []
+         },
+         "<more trimmed>"
+        ],
+        "productSummary": {
+         "legacyId": "prod11740001",
+         "productId": "n4g2nr4v61",
+         "bazaarVoiceID": "Everywhere_Crossbody_2L_Metal_Hardware",
+         "defaultSku": "en-us_158847899",
+         "displayName": "Everywhere Crossbody Bag 2L *Metal Hardware",
+         "unifiedId": "Everywhere-Crossbody-Bag-2L-Metal-Hardware",
+         "parentCategoryUnifiedId": "bags",
+         "parentCategoryDisplayName": "Bags",
+         "productUrl": "/p/everywhere-crossbody-bag-2l-metal-hardware/n4g2nr4v61",
+         "pdpUrl": "/p/everywhere-crossbody-bag-2l-metal-hardware/n4g2nr4v61",
+         "currencyCode": "USD",
+         "listPrice": [
+          "78"
+         ],
+         "price": "78",
+         "onSale": null,
+         "isSoldOut": false,
+         "type": "",
+         "gender": [
+          "Men"
+         ],
+         "newColors": [
+          "77079",
+          "79975"
+         ],
+         "newColorsOrder": [],
+         "trendingColorsAll": [
+          "0393",
+          "74673"
+         ],
+         "bestSellingColorsAll": [
+          "3385",
+          "74345",
+          "42797",
+          "79975",
+          "77076",
+          "73400",
+          "77079",
+          "76820",
+          "72478",
+          "76940",
+          "0393",
+          "76776",
+          "74673"
+         ],
+         "topSellers": [
+          "3385",
+          "74345",
+          "42797",
+          "79975",
+          "77076",
+          "73400",
+          "77079",
+          "76820",
+          "72478",
+          "76940",
+          "0393",
+          "76776",
+          "74673"
+         ],
+         "trendingSwatchOrder": [
+          "0393",
+          "74673",
+          "76940",
+          "76820",
+          "76776",
+          "77079",
+          "72478",
+          "73629",
+          "73400",
+          "79975",
+          "74345",
+          "42797",
+          "77076",
+          "3385"
+         ],
+         "productCategory": [
+          "Bags"
+         ],
+         "priceRange": null,
+         "productMarkDown": null,
+         "productOnSale": null,
+         "fitDetails": "",
+         "fit_short_description": null,
+         "_gender": null,
+         "productStatementByStyle": "<trimmed>",
+         "productInfoByStyle": "<trimmed>",
+         "warmthRating": []
+        },
+        "refinementCrumbs": {
+         "ancestors": [
+          {
+           "label": "Accessories",
+           "navigationState": "/c/accessories/n1dslk"
+          }
+         ],
+         "label": "Bags",
+         "properties": {
+          "navigation-state": "/c/bags/n1rdci"
+         }
+        },
+        "seoData": "<trimmed>",
+        "sizeGuide": {
+         "url": "/help/size-guide/womens",
+         "category": "no-sizechart"
+        },
+        "skus": [
+         {
+          "id": "158020607",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "73629",
+           "name": "Faint Lavender/Gold",
+           "slug": "FTLV/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/73629",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": "59",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158847899",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "76940",
+           "name": "Beach Ball Blue/Silver",
+           "slug": "BEBA/SLVR",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/76940",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "153829120",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": false,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "68461",
+           "name": "Legacy Green/Silver",
+           "slug": "LGYG/SLVR",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/68461",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": "54",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "156425986",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "42797",
+           "name": "Light Ivory/Gold",
+           "slug": "LTIV/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/42797",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "155475483",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "3385",
+           "name": "Black/Gold",
+           "slug": "BLK/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/3385",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "156502419",
+          "styleId": "LU9C80S",
+          "styleNumber": "",
+          "size": "ONE SIZE",
+          "sizeTokenKey": "osfa",
+          "inseam": null,
+          "available": false,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "70365",
+           "name": "Raspberry Coulis/Silver",
+           "slug": "RBCO/SLVR",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/70365",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "78",
+           "salePrice": "59",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         "<21 more skus trimmed>"
+        ]
+       },
+       "status": "success"
+      },
+      "queryKey": [
+       "pdp",
+       "n4g2nr4v61",
+       "v1",
+       "en-us"
+      ],
+      "queryHash": "[\"pdp\",\"n4g2nr4v61\",\"v1\",\"en-us\"]"
+     },
+     {
+      "queryKey": [
+       "alpine-reviews",
+       {
+        "bvId": "Everywhere_Crossbody_2L_Metal_Hardware",
+        "backendMode": "rest",
+        "locale": "en_US",
+        "filters": [],
+        "rating": [],
+        "searchTerm": "",
+        "sortValue": "Rating:desc"
+       }
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": [
+        {
+         "id": "155475483",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "156425986",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158020607",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158847899",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "153829120",
+         "available": false,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "156502419",
+         "available": false,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        "<21 more entries trimmed>"
+       ],
+       "status": "success"
+      },
+      "queryKey": [
+       "alpineInventory",
+       "n4g2nr4v61",
+       "en-us"
+      ],
+      "queryHash": "[\"alpineInventory\",\"n4g2nr4v61\",\"en-us\"]"
+     }
+    ]
+   }
+  }
+ }
+}
