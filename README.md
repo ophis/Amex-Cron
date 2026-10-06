@@ -74,6 +74,7 @@ Combinations are ranked by total (highest first), then fewest units. All units o
 - Sale-priced items have been observed to be final sale, so in practice they are excluded.
 - Only the US site and the women's clothes, men's clothes and accessories catalogs are crawled (no shoes). Pre-tax subtotal only; no cart, tax or shipping.
 - A full scrape fetches several hundred product pages and takes tens of minutes.
-- Akamai may block the requests, and a site change may break parsing. Either way `scrape` fails with an error instead of printing results, after 3 attempts per page with waits of 5 s and 15 s.
+- Akamai may block the requests, and a site change may break parsing. Either way `scrape` fails with an error instead of printing results. Blocked responses (403, `Access Denied` page), 429, 5xx and network errors are retried (3 attempts per page, waits of 5 s and 15 s) before failing; any other HTTP error (including 400) and a site-structure change fail at once.
+- On 2026-10-06 the site's bot protection answered HTTP 400 `GE401001` after 13-16 requests, at which point `scrape` fails.
 - A product delisted mid-crawl aborts the scrape (rerun it). Live category ordering can make a crawl miss a product.
 - Prices with a very small common step (for example 1 cent) make the search too large; `solve` then fails with `search space too large`.

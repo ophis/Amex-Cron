@@ -10,6 +10,7 @@ from lulu_basket.scrape.fetch import Fetcher, TransportError, curl_http_get
 URL = "https://shop.lululemon.com/c/women-clothes/n14uwk"
 OTHER_URL = "https://shop.lululemon.com/p/define-jacket-nulu/hnsjuvo8dn"
 DENIED = "<html><body>Access Denied</body></html>"
+BAD_REQUEST = '{"message": "Bad Request.", "errorCode": "GE401001"}'
 PAGE = '<html><script id="__NEXT_DATA__" type="application/json">{}</script></html>'
 
 
@@ -129,6 +130,15 @@ def test_404_fails_at_once_without_retry_sleeps():
     with pytest.raises(ScrapeError) as excinfo:
         fetcher.get(URL)
     assert str(excinfo.value) == f"request failed: HTTP 404: {URL}"
+    assert len(http.urls) == 1
+    assert sleep.calls == []
+
+
+def test_400_bot_block_response_fails_at_once_without_retry_sleeps():
+    fetcher, http, sleep = make_fetcher((400, BAD_REQUEST))
+    with pytest.raises(ScrapeError) as excinfo:
+        fetcher.get(URL)
+    assert str(excinfo.value) == f"request failed: HTTP 400: {URL}"
     assert len(http.urls) == 1
     assert sleep.calls == []
 

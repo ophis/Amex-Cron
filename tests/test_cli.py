@@ -173,6 +173,12 @@ def case_blocked_403(site):
     return site.http_get, f"error: blocked by site after 3 attempts: {PRODUCT_URL}"
 
 
+def case_bot_block_400(site):
+    stock(site, ("p1", "Define Jacket", 50))
+    site.responses[PRODUCT_URL] = (400, '{"message": "Bad Request.", "errorCode": "GE401001"}')
+    return site.http_get, f"error: request failed: HTTP 400: {PRODUCT_URL}"
+
+
 def case_access_denied_page(site):
     stock(site, ("p1", "Define Jacket", 50))
     site.responses[PRODUCT_URL] = (200, "<html>Access Denied</html>")
@@ -243,6 +249,7 @@ def case_pagination_ended_early(site):
 
 FAILURES = [
     case_blocked_403,
+    case_bot_block_400,
     case_access_denied_page,
     case_transport_error,
     case_not_found,
