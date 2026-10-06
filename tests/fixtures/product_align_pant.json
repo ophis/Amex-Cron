@@ -1,0 +1,810 @@
+{
+ "page": "/p/[...slug]",
+ "query": {
+  "slug": [
+   "lululemon-align-no-line-high-rise-pant-28",
+   "qxsqxy9hy2"
+  ]
+ },
+ "buildId": "yQtXoWd58Xk39hpBndObg",
+ "isFallback": false,
+ "locale": "en-us",
+ "props": {
+  "pageProps": {
+   "awsRegion": "<trimmed>",
+   "akamaiDevice": "<trimmed>",
+   "configs": "<trimmed>",
+   "isAlpineEnabled": "<trimmed>",
+   "locale": "<trimmed>",
+   "regionalBannerProps": "<trimmed>",
+   "SSRLDFlags": "<trimmed>",
+   "fontDomain": "<trimmed>",
+   "isAlpineRequested": "<trimmed>",
+   "isAlpineLayoutModuleEnabled": "<trimmed>",
+   "isAlpineStoryModuleEnabled": "<trimmed>",
+   "usesAlpineFonts": "<trimmed>",
+   "ssrFlags": "<trimmed>",
+   "alpineAccelerationPages": "<trimmed>",
+   "legacyStoryPages": "<trimmed>",
+   "transPerfectHeader": "<trimmed>",
+   "dehydratedState": {
+    "queries": [
+     {
+      "queryKey": [
+       "navData",
+       "alpine",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "pdpContentfulTranslations",
+       "v1",
+       "en-us",
+       "preview=false"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "SeoFeaturedCategoryPDPQuery",
+       "en-us",
+       "qxsqxy9hy2"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": {
+        "allInseam": [
+         {
+          "productId": "voifnqeejx",
+          "productUrl": "/p/lululemon-align-no-line-high-rise-pant-25/voifnqeejx",
+          "inseam": "25\""
+         },
+         {
+          "productId": "qxsqxy9hy2",
+          "productUrl": "/p/lululemon-align-no-line-high-rise-pant-28/qxsqxy9hy2",
+          "inseam": "28\""
+         },
+         {
+          "productId": "is0lhqmzr4",
+          "productUrl": "/p/lululemon-align-no-line-high-rise-pant-31/is0lhqmzr4",
+          "inseam": "31\""
+         }
+        ],
+        "allLocalePids": {
+         "siteId": "",
+         "pdpUrl": "/p/lululemon-align-no-line-high-rise-pant-28/qxsqxy9hy2",
+         "categoryUnifiedId": "womens-leggings",
+         "productUnifiedId": "lululemon-Align-No-Line-High-Rise-Pant-28"
+        },
+        "allSize": [
+         {
+          "key": "0",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "0"
+           }
+          ]
+         },
+         {
+          "key": "2",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "2"
+           }
+          ]
+         },
+         {
+          "key": "4",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "4"
+           }
+          ]
+         },
+         {
+          "key": "6",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "6"
+           }
+          ]
+         },
+         {
+          "key": "8",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "8"
+           }
+          ]
+         },
+         {
+          "key": "10",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "10"
+           }
+          ]
+         },
+         {
+          "key": "12",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "12"
+           }
+          ]
+         }
+        ],
+        "colorAttributes": [],
+        "colorDriver": [
+         {
+          "color": "72756",
+          "sizes": [
+           "0",
+           "2",
+           "12",
+           "8",
+           "10",
+           "6",
+           "4"
+          ]
+         },
+         {
+          "color": "30210",
+          "sizes": [
+           "10",
+           "12",
+           "8",
+           "4",
+           "6",
+           "2",
+           "0"
+          ]
+         },
+         {
+          "color": "74028",
+          "sizes": [
+           "10",
+           "12",
+           "4",
+           "6",
+           "8",
+           "2",
+           "0"
+          ]
+         },
+         {
+          "color": "73703",
+          "sizes": [
+           "0",
+           "6",
+           "10",
+           "12",
+           "4",
+           "8",
+           "2"
+          ]
+         },
+         {
+          "color": "79705",
+          "sizes": [
+           "4",
+           "8",
+           "10",
+           "6",
+           "12",
+           "2",
+           "0"
+          ]
+         },
+         "<more trimmed>"
+        ],
+        "colors": [
+         {
+          "code": "79705",
+          "name": "Phantom Camo Black Multi",
+          "slug": "PCBM",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/79705",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "73703",
+          "name": "Ivy Grove",
+          "slug": "IVYG",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/73703",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "74028",
+          "name": "Pink Pearl",
+          "slug": "PIAR",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/74028",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "72756",
+          "name": "Burgundy Bay",
+          "slug": "BBAY",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/72756",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "30210",
+          "name": "Graphite Grey",
+          "slug": "GGRE",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/30210",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         "<more colors trimmed>"
+        ],
+        "highlights": [
+         {
+          "highlightType": "trending",
+          "highlightLabel": "Trending",
+          "highlightIconApp": "trending_highlight_icon",
+          "priority": 9,
+          "startDate": "2024-10-08",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "warmthIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         },
+         {
+          "highlightType": "popular_gift",
+          "highlightLabel": "Best Gift",
+          "highlightIconApp": "best_gift_icon",
+          "priority": 10,
+          "startDate": "2023-08-01",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "giftBoxIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         }
+        ],
+        "pcmProductVideoInfo": {
+         "url": "https://images.lululemon.com/is/content/lululemon/bDAM_PDP_Assets/LW5IH3S_video-AVS.m3u8",
+         "posterImageUrl": "https://images.lululemon.com/is/image/lululemon/bDAM_PDP_Assets/LW5IH3S_poster.jpg"
+        },
+        "productAttributes": {
+         "productContentCare": [],
+         "productContentFeature": [],
+         "productContentFabric": null,
+         "productContentWhyWeMadeThis": []
+        },
+        "productCarousel": [
+         {
+          "color": {
+           "code": "79705",
+           "name": "Phantom Camo Black Multi",
+           "slug": "PCBM",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/79705",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LW5JXRS-079705",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LW5JXRS_079705_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": false,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LW5JXRS_079705_1",
+            "posterImageUrl": null,
+            "alt": "Phantom Camo Black Multi"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "Model is 5'9\" and wears a size 6",
+           "modelIsWearing": [],
+           "shopThisLook": [
+            "153025988",
+            "153151167"
+           ]
+          },
+          "pcmMediaInfo": []
+         },
+         {
+          "color": {
+           "code": "72756",
+           "name": "Burgundy Bay",
+           "slug": "BBAY",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/72756",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LW5II5S-072756",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LW5II5S_072756_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": true,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LW5II5S_072756_1",
+            "posterImageUrl": null,
+            "alt": "Burgundy Bay"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "Model is 5'9\" and wears a size 6",
+           "modelIsWearing": [],
+           "shopThisLook": [
+            "158020450",
+            "158571906",
+            "158318944"
+           ]
+          },
+          "pcmMediaInfo": []
+         },
+         "<more trimmed>"
+        ],
+        "productSummary": {
+         "legacyId": "prod11900022",
+         "productId": "qxsqxy9hy2",
+         "bazaarVoiceID": "lululemon_Align_No_Line_High_Rise_Pant28",
+         "defaultSku": "en-us_158569331",
+         "displayName": "lululemon Align No Line™ High-Rise Pant 28\"",
+         "unifiedId": "lululemon-Align-No-Line-High-Rise-Pant-28",
+         "parentCategoryUnifiedId": "womens-leggings",
+         "parentCategoryDisplayName": "Leggings",
+         "productUrl": "/p/lululemon-align-no-line-high-rise-pant-28/qxsqxy9hy2",
+         "pdpUrl": "/p/lululemon-align-no-line-high-rise-pant-28/qxsqxy9hy2",
+         "currencyCode": "USD",
+         "listPrice": [
+          "108"
+         ],
+         "price": "108",
+         "onSale": null,
+         "isSoldOut": false,
+         "type": "28\"",
+         "gender": [
+          "Women"
+         ],
+         "newColors": [
+          "79906",
+          "79903",
+          "27148",
+          "77548"
+         ],
+         "newColorsOrder": [],
+         "trendingColorsAll": [
+          "79906",
+          "79903"
+         ],
+         "bestSellingColorsAll": [
+          "0001",
+          "74110",
+          "31382",
+          "76950",
+          "77066",
+          "79906",
+          "76615",
+          "77584",
+          "74028",
+          "79903",
+          "79705",
+          "77648",
+          "30210"
+         ],
+         "topSellers": [
+          "0001",
+          "74110",
+          "31382",
+          "76950",
+          "77066",
+          "79906",
+          "76615",
+          "77584",
+          "74028",
+          "79903",
+          "79705",
+          "77648",
+          "30210"
+         ],
+         "trendingSwatchOrder": [
+          "79906",
+          "79903",
+          "74115",
+          "79705",
+          "72763",
+          "76998",
+          "76887",
+          "73715",
+          "75743",
+          "70212",
+          "74093",
+          "75697",
+          "74050",
+          "74028",
+          "79896",
+          "75700",
+          "77584",
+          "76615",
+          "77066",
+          "76950",
+          "31382",
+          "74110",
+          "0001"
+         ],
+         "productCategory": [
+          "Leggings"
+         ],
+         "priceRange": null,
+         "productMarkDown": null,
+         "productOnSale": null,
+         "fitDetails": "",
+         "fit_short_description": null,
+         "_gender": null,
+         "productStatementByStyle": "<trimmed>",
+         "productInfoByStyle": "<trimmed>",
+         "warmthRating": []
+        },
+        "refinementCrumbs": {
+         "ancestors": [
+          {
+           "label": "Women's Clothes",
+           "navigationState": "/c/women-clothes/n14uwk"
+          },
+          {
+           "label": "Pants",
+           "navigationState": "/c/women-pants/n1qd1q"
+          }
+         ],
+         "label": "Leggings",
+         "properties": {
+          "navigation-state": "/c/women-leggings/n1udsq"
+         }
+        },
+        "seoData": "<trimmed>",
+        "sizeGuide": {
+         "url": "/help/size-guide/womens",
+         "category": "womens-pants"
+        },
+        "skus": [
+         {
+          "id": "158919509",
+          "styleId": "LW5HWFS",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": "28\"",
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": true,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "73703",
+           "name": "Ivy Grove",
+           "slug": "IVYG",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/73703",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": "89",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "159450843",
+          "styleId": "LW5JXRS",
+          "styleNumber": "",
+          "size": "2",
+          "sizeTokenKey": "2",
+          "inseam": "28\"",
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": true,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "79705",
+           "name": "Phantom Camo Black Multi",
+           "slug": "PCBM",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/79705",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158569331",
+          "styleId": "LW5II5S",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": "28\"",
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "72756",
+           "name": "Burgundy Bay",
+           "slug": "BBAY",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/72756",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": "79",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158573787",
+          "styleId": "LW5IYOS",
+          "styleNumber": "",
+          "size": "10",
+          "sizeTokenKey": "10",
+          "inseam": "28\"",
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "74028",
+           "name": "Pink Pearl",
+           "slug": "PIAR",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/74028",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "156800702",
+          "styleId": "LW5HWFS",
+          "styleNumber": "",
+          "size": "10",
+          "sizeTokenKey": "10",
+          "inseam": "28\"",
+          "available": false,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "30210",
+           "name": "Graphite Grey",
+           "slug": "GGRE",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/30210",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158569349",
+          "styleId": "LW5II5S",
+          "styleNumber": "",
+          "size": "2",
+          "sizeTokenKey": "2",
+          "inseam": "28\"",
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "72756",
+           "name": "Burgundy Bay",
+           "slug": "BBAY",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/72756",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "108",
+           "salePrice": "79",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         "<211 more skus trimmed>"
+        ]
+       },
+       "status": "success"
+      },
+      "queryKey": [
+       "pdp",
+       "qxsqxy9hy2",
+       "v1",
+       "en-us"
+      ],
+      "queryHash": "[\"pdp\",\"qxsqxy9hy2\",\"v1\",\"en-us\"]"
+     },
+     {
+      "queryKey": [
+       "alpine-reviews",
+       {
+        "bvId": "lululemon_Align_No_Line_High_Rise_Pant28",
+        "backendMode": "rest",
+        "locale": "en_US",
+        "filters": [],
+        "rating": [],
+        "searchTerm": "",
+        "sortValue": "Rating:desc"
+       }
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": [
+        {
+         "id": "156800702",
+         "available": false,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158569349",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158569331",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158573787",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158919509",
+         "available": true,
+         "isLowStock": true,
+         "lowStockMessage": null
+        },
+        {
+         "id": "159450843",
+         "available": true,
+         "isLowStock": true,
+         "lowStockMessage": null
+        },
+        "<232 more entries trimmed>"
+       ],
+       "status": "success"
+      },
+      "queryKey": [
+       "alpineInventory",
+       "qxsqxy9hy2",
+       "en-us"
+      ],
+      "queryHash": "[\"alpineInventory\",\"qxsqxy9hy2\",\"en-us\"]"
+     },
+     {
+      "queryKey": [
+       "pdp",
+       "voifnqeejx",
+       "v1",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "pdp",
+       "is0lhqmzr4",
+       "v1",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     }
+    ]
+   }
+  }
+ }
+}

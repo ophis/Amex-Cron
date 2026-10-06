@@ -1,0 +1,803 @@
+{
+ "page": "/p/[...slug]",
+ "query": {
+  "fit": "constrain,0",
+  "fmt": "webp",
+  "iccEmbed": "0",
+  "op_sharpen": "0",
+  "op_usm": "0.5,2,10,0",
+  "printRes": "72",
+  "qlt": "80,1",
+  "resMode": "sharp2",
+  "wid": "2644",
+  "slug": [
+   "define-jacket-nulu",
+   "hnsjuvo8dn"
+  ]
+ },
+ "buildId": "yQtXoWd58Xk39hpBndObg",
+ "isFallback": false,
+ "locale": "en-us",
+ "props": {
+  "pageProps": {
+   "awsRegion": "<trimmed>",
+   "akamaiDevice": "<trimmed>",
+   "configs": "<trimmed>",
+   "isAlpineEnabled": "<trimmed>",
+   "locale": "<trimmed>",
+   "regionalBannerProps": "<trimmed>",
+   "SSRLDFlags": "<trimmed>",
+   "fontDomain": "<trimmed>",
+   "isAlpineRequested": "<trimmed>",
+   "isAlpineLayoutModuleEnabled": "<trimmed>",
+   "isAlpineStoryModuleEnabled": "<trimmed>",
+   "usesAlpineFonts": "<trimmed>",
+   "ssrFlags": "<trimmed>",
+   "alpineAccelerationPages": "<trimmed>",
+   "legacyStoryPages": "<trimmed>",
+   "transPerfectHeader": "<trimmed>",
+   "dehydratedState": {
+    "queries": [
+     {
+      "queryKey": [
+       "navData",
+       "alpine",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "pdpContentfulTranslations",
+       "v1",
+       "en-us",
+       "preview=false"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "SeoFeaturedCategoryPDPQuery",
+       "en-us",
+       "hnsjuvo8dn"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": {
+        "allInseam": [],
+        "allLocalePids": {
+         "siteId": "",
+         "pdpUrl": "/p/define-jacket-nulu/hnsjuvo8dn",
+         "categoryUnifiedId": "jackets-and-hoodies-jackets",
+         "productUnifiedId": "Define-Jacket-Nulu"
+        },
+        "allSize": [
+         {
+          "key": "0",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "0"
+           }
+          ]
+         },
+         {
+          "key": "2",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "2"
+           }
+          ]
+         },
+         {
+          "key": "4",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "4"
+           }
+          ]
+         },
+         {
+          "key": "6",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "6"
+           }
+          ]
+         },
+         {
+          "key": "8",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "8"
+           }
+          ]
+         },
+         {
+          "key": "10",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "10"
+           }
+          ]
+         },
+         {
+          "key": "12",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "12"
+           }
+          ]
+         },
+         {
+          "key": "14",
+          "sizeSystems": [
+           {
+            "default": true,
+            "region": "US",
+            "type": "NUMERIC",
+            "label": "14"
+           }
+          ]
+         }
+        ],
+        "colorAttributes": [],
+        "colorDriver": [
+         {
+          "color": "76528",
+          "sizes": [
+           "0",
+           "14",
+           "12",
+           "8",
+           "2",
+           "4",
+           "10",
+           "6"
+          ]
+         },
+         {
+          "color": "20392",
+          "sizes": [
+           "0",
+           "14",
+           "4",
+           "6",
+           "10",
+           "12",
+           "2",
+           "8"
+          ]
+         },
+         {
+          "color": "71918",
+          "sizes": [
+           "14",
+           "0",
+           "10",
+           "12",
+           "2",
+           "4",
+           "6",
+           "8"
+          ]
+         },
+         {
+          "color": "75697",
+          "sizes": [
+           "0",
+           "14",
+           "2",
+           "12",
+           "10",
+           "8",
+           "6",
+           "4"
+          ]
+         },
+         {
+          "color": "0001",
+          "sizes": [
+           "2",
+           "4",
+           "12",
+           "0",
+           "10",
+           "8",
+           "14",
+           "6"
+          ]
+         },
+         {
+          "color": "74897",
+          "sizes": [
+           "14",
+           "6",
+           "12",
+           "8",
+           "4",
+           "2",
+           "10",
+           "0"
+          ]
+         },
+         "<more trimmed>"
+        ],
+        "colors": [
+         {
+          "code": "74897",
+          "name": "Black Plum/Gold/Gold",
+          "slug": "BLPM/GOLD/GOLD",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/74897",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "75697",
+          "name": "Cranberry Charm",
+          "slug": "CACH",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/75697",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "76528",
+          "name": "Deep Marina/Mirror Silver/Mirror Silver",
+          "slug": "DMAR/MRRS/MRRS",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/76528",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "71918",
+          "name": "True Navy/Mirror Silver/Mirror Silver",
+          "slug": "TRNV/MRRS/MRRS",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/71918",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "20392",
+          "name": "Mink Berry",
+          "slug": "MINK",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/20392",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         {
+          "code": "0001",
+          "name": "Black",
+          "slug": "BLK",
+          "swatchUrl": "https://images.lululemon.com/is/image/lululemon/0001",
+          "simpleRanking": null,
+          "ituBt601": null,
+          "ituBt709": null,
+          "colorHarmonyRank": null
+         },
+         "<more colors trimmed>"
+        ],
+        "highlights": [
+         {
+          "highlightType": "trending",
+          "highlightLabel": "Trending",
+          "highlightIconApp": "trending_highlight_icon",
+          "priority": 9,
+          "startDate": "2024-10-08",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "warmthIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         },
+         {
+          "highlightType": "popular_gift",
+          "highlightLabel": "Best Gift",
+          "highlightIconApp": "best_gift_icon",
+          "priority": 10,
+          "startDate": "2023-08-01",
+          "expiryDate": "2030-10-31",
+          "highlightIconWeb": "giftBoxIcon",
+          "visibility": "CDP_AND_PDP_ONLY"
+         }
+        ],
+        "productAttributes": {
+         "productContentCare": [],
+         "productContentFeature": [],
+         "productContentFabric": null,
+         "productContentWhyWeMadeThis": []
+        },
+        "productCarousel": [
+         {
+          "color": {
+           "code": "74897",
+           "name": "Black Plum/Gold/Gold",
+           "slug": "BLPM/GOLD/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/74897",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LW3ID8S-074897",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LW3ID8S_074897_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": true,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_074897_1",
+            "posterImageUrl": null,
+            "alt": "Black Plum/Gold/Gold"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "Model is 5'11\" and wears a size 6",
+           "modelIsWearing": [],
+           "shopThisLook": [
+            "156750869",
+            "155775183",
+            "155855604",
+            "124876556",
+            "158030545"
+           ]
+          },
+          "pcmMediaInfo": []
+         },
+         {
+          "color": {
+           "code": "0001",
+           "name": "Black",
+           "slug": "BLK",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/0001",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "styleColorId": "LW3ID8S-0001",
+          "imageInfo": [
+           "https://images.lululemon.com/is/image/lululemon/LW3ID8S_0001_1",
+           "<more trimmed>"
+          ],
+          "inseam": null,
+          "isMarkdown": false,
+          "mediaInfo": [
+           {
+            "type": "PRODUCT_IMAGE",
+            "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_0001_1",
+            "posterImageUrl": null,
+            "alt": "Black"
+           },
+           "<more trimmed>"
+          ],
+          "modelInfo": {
+           "description": "Kiele is 5'9\" and wears a size 6",
+           "modelIsWearing": [],
+           "shopThisLook": [
+            "110027109",
+            "153102643",
+            "154877858"
+           ]
+          },
+          "pcmMediaInfo": []
+         },
+         "<more trimmed>"
+        ],
+        "productSummary": {
+         "legacyId": "prod11020158",
+         "productId": "hnsjuvo8dn",
+         "bazaarVoiceID": "Define_Jacket_Nulu",
+         "defaultSku": "en-us_158549875",
+         "displayName": "Define Jacket *Nulu",
+         "unifiedId": "Define-Jacket-Nulu",
+         "parentCategoryUnifiedId": "jackets-and-hoodies-jackets",
+         "parentCategoryDisplayName": "Coats & Jackets",
+         "productUrl": "/p/define-jacket-nulu/hnsjuvo8dn",
+         "pdpUrl": "/p/define-jacket-nulu/hnsjuvo8dn",
+         "currencyCode": "USD",
+         "listPrice": [
+          "128",
+          "118"
+         ],
+         "price": "128",
+         "onSale": null,
+         "isSoldOut": false,
+         "type": "",
+         "gender": [
+          "Women"
+         ],
+         "newColors": [
+          "76615",
+          "79906",
+          "76990"
+         ],
+         "newColorsOrder": [],
+         "trendingColorsAll": [
+          "79906",
+          "71906"
+         ],
+         "bestSellingColorsAll": [
+          "0001",
+          "71917",
+          "82358",
+          "80726",
+          "71918",
+          "76033",
+          "4397",
+          "31382",
+          "71906",
+          "0002",
+          "79906",
+          "77584"
+         ],
+         "topSellers": [
+          "0001",
+          "71917",
+          "82358",
+          "80726",
+          "71918",
+          "76033",
+          "4397",
+          "31382",
+          "71906",
+          "0002",
+          "79906",
+          "77584"
+         ],
+         "trendingSwatchOrder": [
+          "79906",
+          "71906",
+          "76033",
+          "0002",
+          "4397",
+          "31382",
+          "77584",
+          "71918",
+          "80726",
+          "71917",
+          "82358",
+          "0001"
+         ],
+         "productCategory": [
+          "Coats & Jackets"
+         ],
+         "priceRange": [
+          "128",
+          "118"
+         ],
+         "productMarkDown": null,
+         "productOnSale": null,
+         "fitDetails": "",
+         "fit_short_description": null,
+         "_gender": null,
+         "productStatementByStyle": "<trimmed>",
+         "productInfoByStyle": "<trimmed>",
+         "warmthRating": []
+        },
+        "refinementCrumbs": {
+         "ancestors": [
+          {
+           "label": "Women's Clothes",
+           "navigationState": "/c/women-clothes/n14uwk"
+          }
+         ],
+         "label": "Coats & Jackets",
+         "properties": {
+          "navigation-state": "/c/women-coats-and-jackets/n1p54j"
+         }
+        },
+        "seoData": "<trimmed>",
+        "sizeGuide": {
+         "url": "/help/size-guide/womens",
+         "category": "womens-tops"
+        },
+        "skus": [
+         {
+          "id": "158094163",
+          "styleId": "LW3ID8S",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": true,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "74897",
+           "name": "Black Plum/Gold/Gold",
+           "slug": "BLPM/GOLD/GOLD",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/74897",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": "99",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158844643",
+          "styleId": "LW3KJOS",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": true,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "0001",
+           "name": "Black",
+           "slug": "BLK",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/0001",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158976765",
+          "styleId": "LW4CD5S",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "75697",
+           "name": "Cranberry Charm",
+           "slug": "CACH",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/75697",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": "99",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "159401649",
+          "styleId": "LW3KJOS",
+          "styleNumber": "",
+          "size": "14",
+          "sizeTokenKey": "14",
+          "inseam": null,
+          "available": true,
+          "isFinalSale": false,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "71918",
+           "name": "True Navy/Mirror Silver/Mirror Silver",
+           "slug": "TRNV/MRRS/MRRS",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/71918",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": null,
+           "onSale": false,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "157710311",
+          "styleId": "LW4CFOS",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": null,
+          "available": false,
+          "isFinalSale": true,
+          "isLowStock": null,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "20392",
+           "name": "Mink Berry",
+           "slug": "MINK",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/20392",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": "74",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         {
+          "id": "158549875",
+          "styleId": "LW4CD5S",
+          "styleNumber": "",
+          "size": "0",
+          "sizeTokenKey": "0",
+          "inseam": null,
+          "available": false,
+          "isFinalSale": true,
+          "isLowStock": false,
+          "lowStockMessage": null,
+          "skuUrl": "",
+          "color": {
+           "code": "76528",
+           "name": "Deep Marina/Mirror Silver/Mirror Silver",
+           "slug": "DMAR/MRRS/MRRS",
+           "swatchUrl": "https://images.lululemon.com/is/image/lululemon/76528",
+           "simpleRanking": null,
+           "ituBt601": null,
+           "ituBt709": null,
+           "colorHarmonyRank": null
+          },
+          "price": {
+           "listPrice": "128",
+           "salePrice": "99",
+           "onSale": true,
+           "earlyAccessMarkdownPrice": null,
+           "currency": {
+            "code": "USD",
+            "symbol": ""
+           }
+          }
+         },
+         "<370 more skus trimmed>"
+        ]
+       },
+       "status": "success"
+      },
+      "queryKey": [
+       "pdp",
+       "hnsjuvo8dn",
+       "v1",
+       "en-us"
+      ],
+      "queryHash": "[\"pdp\",\"hnsjuvo8dn\",\"v1\",\"en-us\"]"
+     },
+     {
+      "queryKey": [
+       "alpine-reviews",
+       {
+        "bvId": "Define_Jacket_Nulu",
+        "backendMode": "rest",
+        "locale": "en_US",
+        "filters": [],
+        "rating": [],
+        "searchTerm": "",
+        "sortValue": "Rating:desc"
+       }
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": [
+        {
+         "id": "158094163",
+         "available": true,
+         "isLowStock": true,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158549875",
+         "available": false,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158844643",
+         "available": true,
+         "isLowStock": true,
+         "lowStockMessage": null
+        },
+        {
+         "id": "158976765",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        {
+         "id": "159401649",
+         "available": true,
+         "isLowStock": false,
+         "lowStockMessage": null
+        },
+        "<401 more entries trimmed>"
+       ],
+       "status": "success"
+      },
+      "queryKey": [
+       "alpineInventory",
+       "hnsjuvo8dn",
+       "en-us"
+      ],
+      "queryHash": "[\"alpineInventory\",\"hnsjuvo8dn\",\"en-us\"]"
+     }
+    ]
+   }
+  }
+ }
+}

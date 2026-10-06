@@ -1,0 +1,2717 @@
+{
+ "page": "/c/[...slug]",
+ "query": {
+  "slug": [
+   "women-clothes",
+   "n14uwk"
+  ]
+ },
+ "buildId": "yQtXoWd58Xk39hpBndObg",
+ "isFallback": false,
+ "locale": "en-us",
+ "props": {
+  "pageProps": {
+   "awsRegion": "<trimmed>",
+   "akamaiDevice": "<trimmed>",
+   "configs": "<trimmed>",
+   "statusCode": null,
+   "regionalBannerProps": "<trimmed>",
+   "fontDomain": "<trimmed>",
+   "locale": "<trimmed>",
+   "isAlpineRequested": "<trimmed>",
+   "isAlpineEnabled": "<trimmed>",
+   "isAlpineLayoutModuleEnabled": "<trimmed>",
+   "isAlpineStoryModuleEnabled": "<trimmed>",
+   "usesAlpineFonts": "<trimmed>",
+   "ssrFlags": "<trimmed>",
+   "alpineAccelerationPages": "<trimmed>",
+   "legacyStoryPages": "<trimmed>",
+   "transPerfectHeader": "<trimmed>",
+   "dehydratedState": {
+    "queries": [
+     {
+      "queryKey": [
+       "navData",
+       "alpine",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "state": {
+       "data": {
+        "pages": [
+         {
+          "data": {
+           "id": "/c/women-clothes/n14uwk",
+           "type": "category-details",
+           "attributes": {
+            "title": "Women's Clothes",
+            "type": "default",
+            "description": "<trimmed>",
+            "breadcrumbs": "<trimmed>",
+            "appliedRefinements": "<trimmed>",
+            "sortOptions": [
+             {
+              "path": "/c/women-clothes/n14uwk",
+              "isSelected": true,
+              "label": "Featured"
+             },
+             {
+              "path": "/c/women-clothes/n14uwk?Ns=product.last_SKU_addition_dateTime%7C1",
+              "isSelected": false,
+              "label": "New Arrivals"
+             },
+             {
+              "path": "/c/women-clothes/n14uwk?Ns=RATINGS%7C1",
+              "isSelected": false,
+              "label": "Top Rated"
+             },
+             {
+              "path": "/c/women-clothes/n14uwk?Ns=price%7C1",
+              "isSelected": false,
+              "label": "Price: High to Low"
+             },
+             {
+              "path": "/c/women-clothes/n14uwk?Ns=price%7C0",
+              "isSelected": false,
+              "label": "Price: Low to High"
+             }
+            ],
+            "totalCount": 1130,
+            "offset": 0,
+            "limit": 40,
+            "facets": "<trimmed>"
+           },
+           "relationships": {
+            "products": {
+             "links": {
+              "self": "/v1/categories/n14uwk/products?filter%5Bsku.availability%5D=true%2Cfalse&slug=women-clothes&page%5Blimit%5D=40&page%5Boffset%5D=0",
+              "next": "/v1/categories/n14uwk/products?filter%5Bsku.availability%5D=true%2Cfalse&slug=women-clothes&page%5Blimit%5D=40&page%5Boffset%5D=40"
+             },
+             "data": [
+              {
+               "id": "hnsjuvo8dn",
+               "type": "products"
+              },
+              {
+               "id": "lp4yqrz3sp",
+               "type": "products"
+              },
+              {
+               "id": "o2dx4njotf",
+               "type": "products"
+              },
+              "<37 more product refs trimmed>"
+             ]
+            },
+            "pageData": {
+             "data": {
+              "id": "n14uwk",
+              "type": "category-page-data"
+             }
+            }
+           }
+          },
+          "included": [
+           {
+            "id": "hnsjuvo8dn",
+            "type": "products",
+            "attributes": {
+             "reviewsId": "Define_Jacket_Nulu",
+             "name": "Define Jacket *Nulu",
+             "variant": "Nulu",
+             "unifiedId": "Define-Jacket-Nulu",
+             "parentCategory": {
+              "id": "n14uwk",
+              "name": "Women's Clothes",
+              "unifiedId": "jackets-and-hoodies-jackets",
+              "displayName": "Women's Clothes"
+             },
+             "url": "/p/define-jacket-nulu/hnsjuvo8dn",
+             "colors": [
+              {
+               "id": "82358",
+               "name": "Mahogany Muse/Gold/Gold",
+               "colorGroup": "Gold",
+               "url": "https://images.lululemon.com/is/image/lululemon/82358"
+              },
+              {
+               "id": "79906",
+               "name": "Moonlight Floral Multi",
+               "colorGroup": "Printed",
+               "url": "https://images.lululemon.com/is/image/lululemon/79906"
+              },
+              {
+               "id": "77584",
+               "name": "Flamingo Fun Tone",
+               "colorGroup": "Pink",
+               "url": "https://images.lululemon.com/is/image/lululemon/77584"
+              },
+              {
+               "id": "80726",
+               "name": "Dusty Diamond/Mirror Silver/Mirror Silver",
+               "colorGroup": "",
+               "url": "https://images.lululemon.com/is/image/lululemon/80726"
+              },
+              {
+               "id": "76033",
+               "name": "Pink Pearl/Gold/Gold",
+               "colorGroup": "PinkGold",
+               "url": "https://images.lululemon.com/is/image/lululemon/76033"
+              },
+              {
+               "id": "71917",
+               "name": "Black/Gold/Gold",
+               "colorGroup": "BlackNeutralGold",
+               "url": "https://images.lululemon.com/is/image/lululemon/71917"
+              },
+              {
+               "id": "4397",
+               "name": "Blush Quartz",
+               "colorGroup": "Pink",
+               "url": "https://images.lululemon.com/is/image/lululemon/4397"
+              },
+              {
+               "id": "71918",
+               "name": "True Navy/Mirror Silver/Mirror Silver",
+               "colorGroup": "NavyBlue",
+               "url": "https://images.lululemon.com/is/image/lululemon/71918"
+              },
+              {
+               "id": "31382",
+               "name": "True Navy",
+               "colorGroup": "NavyBlue",
+               "url": "https://images.lululemon.com/is/image/lululemon/31382"
+              },
+              {
+               "id": "0002",
+               "name": "White",
+               "colorGroup": "WhiteNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/0002"
+              },
+              {
+               "id": "71906",
+               "name": "Light Ivory/Gold/Gold",
+               "colorGroup": "WhiteNeutralGold",
+               "url": "https://images.lululemon.com/is/image/lululemon/71906"
+              },
+              {
+               "id": "0001",
+               "name": "Black",
+               "colorGroup": "BlackNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/0001"
+              },
+              {
+               "id": "77143",
+               "name": "Beach Ball Blue/Mirror Silver/Mirror Silver",
+               "colorGroup": "Blue",
+               "url": "https://images.lululemon.com/is/image/lululemon/77143"
+              },
+              {
+               "id": "73703",
+               "name": "Ivy Grove",
+               "colorGroup": "Green",
+               "url": "https://images.lululemon.com/is/image/lululemon/73703"
+              },
+              {
+               "id": "75743",
+               "name": "Pink Flare",
+               "colorGroup": "Pink",
+               "url": "https://images.lululemon.com/is/image/lululemon/75743"
+              },
+              {
+               "id": "72761",
+               "name": "Walnut Crunch",
+               "colorGroup": "Brown",
+               "url": "https://images.lululemon.com/is/image/lululemon/72761"
+              },
+              {
+               "id": "74897",
+               "name": "Black Plum/Gold/Gold",
+               "colorGroup": "PurpleGold",
+               "url": "https://images.lululemon.com/is/image/lululemon/74897"
+              },
+              {
+               "id": "75697",
+               "name": "Cranberry Charm",
+               "colorGroup": "Red",
+               "url": "https://images.lululemon.com/is/image/lululemon/75697"
+              },
+              {
+               "id": "41179",
+               "name": "Sequoia",
+               "colorGroup": "BrownNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/41179"
+              },
+              {
+               "id": "71293",
+               "name": "Thawed Camo Black Multi",
+               "colorGroup": "BlackNeutralCamoPrinted",
+               "url": "https://images.lululemon.com/is/image/lululemon/71293"
+              },
+              {
+               "id": "74115",
+               "name": "True Leopard Black Multi",
+               "colorGroup": "Leopard PrintPrinted",
+               "url": "https://images.lululemon.com/is/image/lululemon/74115"
+              },
+              {
+               "id": "72757",
+               "name": "Oxford Red",
+               "colorGroup": "RedNeon",
+               "url": "https://images.lululemon.com/is/image/lululemon/72757"
+              }
+             ],
+             "styles": [
+              {
+               "id": "LW3ID8S",
+               "colors": [
+                {
+                 "id": "LW3ID8S-082358",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_082358_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3ID8S-0001",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_0001_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3ID8S-073703",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_073703_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3ID8S-074897",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_074897_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3ID8S-041179",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3ID8S_041179_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW3JS2S",
+               "colors": [
+                {
+                 "id": "LW3JS2S-079906",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3JS2S_079906_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3JS2S-071293",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 79,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3JS2S_071293_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW3KYXS",
+               "colors": [
+                {
+                 "id": "LW3KYXS-077584",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3KYXS_077584_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW4CD5S",
+               "colors": [
+                {
+                 "id": "LW4CD5S-080726",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CD5S_080726_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CD5S-072761",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CD5S_072761_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CD5S-075697",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CD5S_075697_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW4CFOS",
+               "colors": [
+                {
+                 "id": "LW4CFOS-076033",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CFOS_076033_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CFOS-4397",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CFOS_4397_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CFOS-0002",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CFOS_0002_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CFOS-071906",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CFOS_071906_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW3KJOS",
+               "colors": [
+                {
+                 "id": "LW3KJOS-071917",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3KJOS_071917_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3KJOS-071918",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3KJOS_071918_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3KJOS-031382",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3KJOS_031382_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3KJOS-0001",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3KJOS_0001_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW4CAFS",
+               "colors": [
+                {
+                 "id": "LW4CAFS-0002",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CAFS_0002_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CAFS-077143",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CAFS_077143_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CAFS-075743",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CAFS_075743_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW4CAFS-072757",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW4CAFS_072757_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW3JPJS",
+               "colors": [
+                {
+                 "id": "LW3JPJS-074115",
+                 "price": {
+                  "listPrice": 128,
+                  "salePrice": 99,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3JPJS_074115_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              }
+             ],
+             "inseams": [
+              {
+               "label": ""
+              }
+             ],
+             "skus": [
+              {
+               "id": "us_159568552",
+               "styleId": "LW3ID8S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=82358&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "82358",
+                "name": "Mahogany Muse/Gold/Gold",
+                "colorGroup": "Gold",
+                "url": "https://images.lululemon.com/is/image/lululemon/82358?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401535",
+               "styleId": "LW3JS2S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=79906&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "79906",
+                "name": "Moonlight Floral Multi",
+                "colorGroup": "Printed",
+                "url": "https://images.lululemon.com/is/image/lululemon/79906?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401759",
+               "styleId": "LW3KYXS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=77584&size=6",
+               "size": "6",
+               "inseam": "",
+               "color": {
+                "id": "77584",
+                "name": "Flamingo Fun Tone",
+                "colorGroup": "Pink",
+                "url": "https://images.lululemon.com/is/image/lululemon/77584?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401969",
+               "styleId": "LW4CD5S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=80726&size=8",
+               "size": "8",
+               "inseam": "",
+               "color": {
+                "id": "80726",
+                "name": "Dusty Diamond/Mirror Silver/Mirror Silver",
+                "colorGroup": "",
+                "url": "https://images.lululemon.com/is/image/lululemon/80726?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158547111",
+               "styleId": "LW4CFOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=76033&size=12",
+               "size": "12",
+               "inseam": "",
+               "color": {
+                "id": "76033",
+                "name": "Pink Pearl/Gold/Gold",
+                "colorGroup": "PinkGold",
+                "url": "https://images.lululemon.com/is/image/lululemon/76033?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_157678089",
+               "styleId": "LW3KJOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=71917&size=0",
+               "size": "0",
+               "inseam": "",
+               "color": {
+                "id": "71917",
+                "name": "Black/Gold/Gold",
+                "colorGroup": "BlackNeutralGold",
+                "url": "https://images.lululemon.com/is/image/lululemon/71917?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158027158",
+               "styleId": "LW4CFOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=4397&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "4397",
+                "name": "Blush Quartz",
+                "colorGroup": "Pink",
+                "url": "https://images.lululemon.com/is/image/lululemon/4397?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159446252",
+               "styleId": "LW3KJOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=71918&size=8",
+               "size": "8",
+               "inseam": "",
+               "color": {
+                "id": "71918",
+                "name": "True Navy/Mirror Silver/Mirror Silver",
+                "colorGroup": "NavyBlue",
+                "url": "https://images.lululemon.com/is/image/lululemon/71918?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159069713",
+               "styleId": "LW3KJOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=31382&size=6",
+               "size": "6",
+               "inseam": "",
+               "color": {
+                "id": "31382",
+                "name": "True Navy",
+                "colorGroup": "NavyBlue",
+                "url": "https://images.lululemon.com/is/image/lululemon/31382?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_151503086",
+               "styleId": "LW4CFOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=0002&size=12",
+               "size": "12",
+               "inseam": "",
+               "color": {
+                "id": "0002",
+                "name": "White",
+                "colorGroup": "WhiteNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0002?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_153875864",
+               "styleId": "LW4CAFS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=0002&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "0002",
+                "name": "White",
+                "colorGroup": "WhiteNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0002?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_156485363",
+               "styleId": "LW4CFOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=71906&size=12",
+               "size": "12",
+               "inseam": "",
+               "color": {
+                "id": "71906",
+                "name": "Light Ivory/Gold/Gold",
+                "colorGroup": "WhiteNeutralGold",
+                "url": "https://images.lululemon.com/is/image/lululemon/71906?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158844700",
+               "styleId": "LW3KJOS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=0001&size=4",
+               "size": "4",
+               "inseam": "",
+               "color": {
+                "id": "0001",
+                "name": "Black",
+                "colorGroup": "BlackNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0001?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_154826268",
+               "styleId": "LW3ID8S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=0001&size=14",
+               "size": "14",
+               "inseam": "",
+               "color": {
+                "id": "0001",
+                "name": "Black",
+                "colorGroup": "BlackNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0001?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158845344",
+               "styleId": "LW4CAFS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=77143&size=0",
+               "size": "0",
+               "inseam": "",
+               "color": {
+                "id": "77143",
+                "name": "Beach Ball Blue/Mirror Silver/Mirror Silver",
+                "colorGroup": "Blue",
+                "url": "https://images.lululemon.com/is/image/lululemon/77143?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158976401",
+               "styleId": "LW3ID8S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=73703&size=4",
+               "size": "4",
+               "inseam": "",
+               "color": {
+                "id": "73703",
+                "name": "Ivy Grove",
+                "colorGroup": "Green",
+                "url": "https://images.lululemon.com/is/image/lululemon/73703?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158974631",
+               "styleId": "LW4CAFS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=75743&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "75743",
+                "name": "Pink Flare",
+                "colorGroup": "Pink",
+                "url": "https://images.lululemon.com/is/image/lululemon/75743?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158643502",
+               "styleId": "LW4CD5S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=72761&size=4",
+               "size": "4",
+               "inseam": "",
+               "color": {
+                "id": "72761",
+                "name": "Walnut Crunch",
+                "colorGroup": "Brown",
+                "url": "https://images.lululemon.com/is/image/lululemon/72761?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158094163",
+               "styleId": "LW3ID8S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=74897&size=0",
+               "size": "0",
+               "inseam": "",
+               "color": {
+                "id": "74897",
+                "name": "Black Plum/Gold/Gold",
+                "colorGroup": "PurpleGold",
+                "url": "https://images.lululemon.com/is/image/lululemon/74897?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158976795",
+               "styleId": "LW4CD5S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=75697&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "75697",
+                "name": "Cranberry Charm",
+                "colorGroup": "Red",
+                "url": "https://images.lululemon.com/is/image/lululemon/75697?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158096110",
+               "styleId": "LW3ID8S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=41179&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "41179",
+                "name": "Sequoia",
+                "colorGroup": "BrownNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/41179?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158025360",
+               "styleId": "LW3JS2S",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=71293&size=4",
+               "size": "4",
+               "inseam": "",
+               "color": {
+                "id": "71293",
+                "name": "Thawed Camo Black Multi",
+                "colorGroup": "BlackNeutralCamoPrinted",
+                "url": "https://images.lululemon.com/is/image/lululemon/71293?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 79
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158574750",
+               "styleId": "LW3JPJS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=74115&size=0",
+               "size": "0",
+               "inseam": "",
+               "color": {
+                "id": "74115",
+                "name": "True Leopard Black Multi",
+                "colorGroup": "Leopard PrintPrinted",
+                "url": "https://images.lululemon.com/is/image/lululemon/74115?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158034511",
+               "styleId": "LW4CAFS",
+               "url": "/p/Define-Jacket-Nulu/hnsjuvo8dn?color=72757&size=2",
+               "size": "2",
+               "inseam": "",
+               "color": {
+                "id": "72757",
+                "name": "Oxford Red",
+                "colorGroup": "RedNeon",
+                "url": "https://images.lululemon.com/is/image/lululemon/72757?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128,
+                "salePrice": 99
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              }
+             ],
+             "sizes": [
+              {
+               "label": "2"
+              },
+              {
+               "label": "10"
+              },
+              {
+               "label": "14"
+              },
+              {
+               "label": "4"
+              },
+              {
+               "label": "6"
+              },
+              {
+               "label": "8"
+              },
+              {
+               "label": "12"
+              },
+              {
+               "label": "0"
+              }
+             ],
+             "activities": [
+              "Casual",
+              "Golf",
+              "Pilates",
+              "Tennis",
+              "Yoga"
+             ],
+             "highlights": [
+              {
+               "id": "hnsjuvo8dn-highlight-0",
+               "highlightType": "trending",
+               "highlightLabel": "Trending",
+               "highlightIconApp": "trending_highlight_icon",
+               "priority": 9,
+               "startDate": "2024-10-08",
+               "expiryDate": "2030-10-31",
+               "highlightIconWeb": "warmthIcon",
+               "visibility": "CDP_AND_PDP_ONLY"
+              }
+             ]
+            }
+           },
+           {
+            "id": "lp4yqrz3sp",
+            "type": "products",
+            "attributes": {
+             "reviewsId": "Scuba_Evolve_Half_Zip_Hoodie",
+             "name": "Scuba Evolve Oversized Half-Zip Hoodie",
+             "variant": "",
+             "unifiedId": "Scuba-Evolve-Oversized-Half-Zip-Hoodie",
+             "parentCategory": {
+              "id": "n14uwk",
+              "name": "Women's Clothes",
+              "unifiedId": "womens-outerwear",
+              "displayName": "Women's Clothes"
+             },
+             "url": "/p/scuba-evolve-oversized-half-zip-hoodie/lp4yqrz3sp",
+             "colors": [
+              {
+               "id": "31382",
+               "name": "True Navy",
+               "colorGroup": "NavyBlue",
+               "url": "https://images.lululemon.com/is/image/lululemon/31382"
+              },
+              {
+               "id": "76615",
+               "name": "Remixed Marine",
+               "colorGroup": "Blue",
+               "url": "https://images.lululemon.com/is/image/lululemon/76615"
+              },
+              {
+               "id": "79641",
+               "name": "Toasted Pink/Gold",
+               "colorGroup": "Gold",
+               "url": "https://images.lululemon.com/is/image/lululemon/79641"
+              },
+              {
+               "id": "74110",
+               "name": "Mahogany Muse",
+               "colorGroup": "BrownNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/74110"
+              },
+              {
+               "id": "42797",
+               "name": "Light Ivory/Gold",
+               "colorGroup": "White",
+               "url": "https://images.lululemon.com/is/image/lululemon/42797"
+              },
+              {
+               "id": "76925",
+               "name": "Raspberry Rave/Raspberry Rave",
+               "colorGroup": "Pink",
+               "url": "https://images.lululemon.com/is/image/lululemon/76925"
+              },
+              {
+               "id": "0001",
+               "name": "Black",
+               "colorGroup": "BlackNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/0001"
+              },
+              {
+               "id": "32493",
+               "name": "Heathered Core Ultra Light Grey",
+               "colorGroup": "GreyNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/32493"
+              }
+             ],
+             "styles": [
+              {
+               "id": "LW3LH2S",
+               "colors": [
+                {
+                 "id": "LW3LH2S-031382",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_031382_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-076615",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_076615_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-079641",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_079641_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-074110",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_074110_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-042797",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_042797_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-076925",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_076925_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW3LH2S-0001",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LH2S_0001_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW3LHRS",
+               "colors": [
+                {
+                 "id": "LW3LHRS-032493",
+                 "price": {
+                  "listPrice": 128,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW3LHRS_032493_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              }
+             ],
+             "inseams": [
+              {
+               "label": ""
+              }
+             ],
+             "skus": [
+              {
+               "id": "us_159643550",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=31382&size=L",
+               "size": "L",
+               "inseam": "",
+               "color": {
+                "id": "31382",
+                "name": "True Navy",
+                "colorGroup": "NavyBlue",
+                "url": "https://images.lululemon.com/is/image/lululemon/31382?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401648",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=76615&size=XXS",
+               "size": "XXS",
+               "inseam": "",
+               "color": {
+                "id": "76615",
+                "name": "Remixed Marine",
+                "colorGroup": "Blue",
+                "url": "https://images.lululemon.com/is/image/lululemon/76615?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159403044",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=79641&size=XXS",
+               "size": "XXS",
+               "inseam": "",
+               "color": {
+                "id": "79641",
+                "name": "Toasted Pink/Gold",
+                "colorGroup": "Gold",
+                "url": "https://images.lululemon.com/is/image/lululemon/79641?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401497",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=74110&size=XL",
+               "size": "XL",
+               "inseam": "",
+               "color": {
+                "id": "74110",
+                "name": "Mahogany Muse",
+                "colorGroup": "BrownNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/74110?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401409",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=42797&size=M",
+               "size": "M",
+               "inseam": "",
+               "color": {
+                "id": "42797",
+                "name": "Light Ivory/Gold",
+                "colorGroup": "White",
+                "url": "https://images.lululemon.com/is/image/lululemon/42797?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401666",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=76925&size=L",
+               "size": "L",
+               "inseam": "",
+               "color": {
+                "id": "76925",
+                "name": "Raspberry Rave/Raspberry Rave",
+                "colorGroup": "Pink",
+                "url": "https://images.lululemon.com/is/image/lululemon/76925?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159401243",
+               "styleId": "LW3LH2S",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=0001&size=L",
+               "size": "L",
+               "inseam": "",
+               "color": {
+                "id": "0001",
+                "name": "Black",
+                "colorGroup": "BlackNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0001?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159402936",
+               "styleId": "LW3LHRS",
+               "url": "/p/Scuba-Evolve-Oversized-Half-Zip-Hoodie/lp4yqrz3sp?color=32493&size=L",
+               "size": "L",
+               "inseam": "",
+               "color": {
+                "id": "32493",
+                "name": "Heathered Core Ultra Light Grey",
+                "colorGroup": "GreyNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/32493?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 128
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              }
+             ],
+             "sizes": [
+              {
+               "label": "L"
+              },
+              {
+               "label": "M"
+              },
+              {
+               "label": "XXS"
+              },
+              {
+               "label": "XL"
+              },
+              {
+               "label": "XS"
+              },
+              {
+               "label": "S"
+              }
+             ],
+             "activities": [
+              "Casual",
+              "Lounge"
+             ],
+             "highlights": [
+              {
+               "id": "lp4yqrz3sp-highlight-0",
+               "highlightType": "trending",
+               "highlightLabel": "Trending",
+               "highlightIconApp": "trending_highlight_icon",
+               "priority": 9,
+               "startDate": "2024-10-08",
+               "expiryDate": "2030-10-31",
+               "highlightIconWeb": "warmthIcon",
+               "visibility": "CDP_AND_PDP_ONLY"
+              }
+             ]
+            }
+           },
+           {
+            "id": "o2dx4njotf",
+            "type": "products",
+            "attributes": {
+             "reviewsId": "Dance_Studio_Jogger_29",
+             "name": "Dance Studio Mid-Rise Jogger *Full Length",
+             "variant": "Full Length",
+             "unifiedId": "Dance-Studio-Jogger-29",
+             "parentCategory": {
+              "id": "n14uwk",
+              "name": "Women's Clothes",
+              "unifiedId": "womens-joggers",
+              "displayName": "Women's Clothes"
+             },
+             "url": "/p/dance-studio-jogger-29/o2dx4njotf",
+             "colors": [
+              {
+               "id": "76995",
+               "name": "Icy Taupe",
+               "colorGroup": "WhiteNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/76995"
+              },
+              {
+               "id": "74110",
+               "name": "Mahogany Muse",
+               "colorGroup": "BrownNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/74110"
+              },
+              {
+               "id": "30210",
+               "name": "Graphite Grey",
+               "colorGroup": "GreyNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/30210"
+              },
+              {
+               "id": "0002",
+               "name": "White",
+               "colorGroup": "WhiteNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/0002"
+              },
+              {
+               "id": "0001",
+               "name": "Black",
+               "colorGroup": "BlackNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/0001"
+              },
+              {
+               "id": "31382",
+               "name": "True Navy",
+               "colorGroup": "NavyBlue",
+               "url": "https://images.lululemon.com/is/image/lululemon/31382"
+              },
+              {
+               "id": "70687",
+               "name": "Pink Dragonfruit",
+               "colorGroup": "Pink",
+               "url": "https://images.lululemon.com/is/image/lululemon/70687"
+              },
+              {
+               "id": "76998",
+               "name": "Dreamy Blue",
+               "colorGroup": "Blue",
+               "url": "https://images.lululemon.com/is/image/lululemon/76998"
+              },
+              {
+               "id": "33454",
+               "name": "Light Ivory",
+               "colorGroup": "White",
+               "url": "https://images.lululemon.com/is/image/lululemon/33454"
+              },
+              {
+               "id": "68684",
+               "name": "Sheer Oak",
+               "colorGroup": "BrownNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/68684"
+              },
+              {
+               "id": "69026",
+               "name": "Lava Cake",
+               "colorGroup": "BrownNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/69026"
+              },
+              {
+               "id": "28022",
+               "name": "Indochine Blue",
+               "colorGroup": "NavyGreyBlue",
+               "url": "https://images.lululemon.com/is/image/lululemon/28022"
+              },
+              {
+               "id": "36865",
+               "name": "Dove Grey",
+               "colorGroup": "WhiteNeutral",
+               "url": "https://images.lululemon.com/is/image/lululemon/36865"
+              },
+              {
+               "id": "70634",
+               "name": "Leopard Warp Black Multi",
+               "colorGroup": "BlackPrintedLeopard Print",
+               "url": "https://images.lululemon.com/is/image/lululemon/70634"
+              }
+             ],
+             "styles": [
+              {
+               "id": "LW5ENPS",
+               "colors": [
+                {
+                 "id": "LW5ENPS-076995",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_076995_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENPS-0002",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_0002_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENPS-076998",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 89,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_076998_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENPS-033454",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 49,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_033454_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENPS-068684",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 49,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_068684_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENPS-036865",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 59,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENPS_036865_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW5ENMS",
+               "colors": [
+                {
+                 "id": "LW5ENMS-074110",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_074110_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-030210",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_030210_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-0001",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_0001_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-031382",
+                 "price": {
+                  "listPrice": 118,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_031382_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-070687",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 59,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_070687_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-069026",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 49,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_069026_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                },
+                {
+                 "id": "LW5ENMS-028022",
+                 "price": {
+                  "listPrice": 118,
+                  "salePrice": 59,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5ENMS_028022_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              },
+              {
+               "id": "LW5HPZS",
+               "colors": [
+                {
+                 "id": "LW5HPZS-070634",
+                 "price": {
+                  "listPrice": 98,
+                  "salePrice": 49,
+                  "currencyCode": "USD"
+                 },
+                 "images": [
+                  {
+                   "url": "https://images.lululemon.com/is/image/lululemon/LW5HPZS_070634_1"
+                  },
+                  "<more images trimmed>"
+                 ],
+                 "availability": {
+                  "isAvailable": true,
+                  "fulfillmentType": "ship"
+                 }
+                }
+               ]
+              }
+             ],
+             "inseams": [
+              {
+               "label": "29\""
+              }
+             ],
+             "skus": [
+              {
+               "id": "us_159454086",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=76995&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "76995",
+                "name": "Icy Taupe",
+                "colorGroup": "WhiteNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/76995?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159454073",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=74110&size=6",
+               "size": "6",
+               "inseam": "29\"",
+               "color": {
+                "id": "74110",
+                "name": "Mahogany Muse",
+                "colorGroup": "BrownNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/74110?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_148309241",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=30210&size=12",
+               "size": "12",
+               "inseam": "29\"",
+               "color": {
+                "id": "30210",
+                "name": "Graphite Grey",
+                "colorGroup": "GreyNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/30210?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_153700171",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=0002&size=4",
+               "size": "4",
+               "inseam": "29\"",
+               "color": {
+                "id": "0002",
+                "name": "White",
+                "colorGroup": "WhiteNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0002?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_144358506",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=0001&size=12",
+               "size": "12",
+               "inseam": "29\"",
+               "color": {
+                "id": "0001",
+                "name": "Black",
+                "colorGroup": "BlackNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/0001?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_144407784",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=31382&size=14",
+               "size": "14",
+               "inseam": "29\"",
+               "color": {
+                "id": "31382",
+                "name": "True Navy",
+                "colorGroup": "NavyBlue",
+                "url": "https://images.lululemon.com/is/image/lululemon/31382?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_156526434",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=70687&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "70687",
+                "name": "Pink Dragonfruit",
+                "colorGroup": "Pink",
+                "url": "https://images.lululemon.com/is/image/lululemon/70687?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 59
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_159454179",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=76998&size=2",
+               "size": "2",
+               "inseam": "29\"",
+               "color": {
+                "id": "76998",
+                "name": "Dreamy Blue",
+                "colorGroup": "Blue",
+                "url": "https://images.lululemon.com/is/image/lululemon/76998?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 89
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_155863051",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=33454&size=2",
+               "size": "2",
+               "inseam": "29\"",
+               "color": {
+                "id": "33454",
+                "name": "Light Ivory",
+                "colorGroup": "White",
+                "url": "https://images.lululemon.com/is/image/lululemon/33454?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 49
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_155863196",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=68684&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "68684",
+                "name": "Sheer Oak",
+                "colorGroup": "BrownNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/68684?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 49
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_155752399",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=69026&size=2",
+               "size": "2",
+               "inseam": "29\"",
+               "color": {
+                "id": "69026",
+                "name": "Lava Cake",
+                "colorGroup": "BrownNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/69026?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 49
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158035033",
+               "styleId": "LW5ENMS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=28022&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "28022",
+                "name": "Indochine Blue",
+                "colorGroup": "NavyGreyBlue",
+                "url": "https://images.lululemon.com/is/image/lululemon/28022?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 59
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_158029966",
+               "styleId": "LW5ENPS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=36865&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "36865",
+                "name": "Dove Grey",
+                "colorGroup": "WhiteNeutral",
+                "url": "https://images.lululemon.com/is/image/lululemon/36865?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 118,
+                "salePrice": 59
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              },
+              {
+               "id": "us_156490032",
+               "styleId": "LW5HPZS",
+               "url": "/p/Dance-Studio-Jogger-29/o2dx4njotf?color=70634&size=0",
+               "size": "0",
+               "inseam": "29\"",
+               "color": {
+                "id": "70634",
+                "name": "Leopard Warp Black Multi",
+                "colorGroup": "BlackPrintedLeopard Print",
+                "url": "https://images.lululemon.com/is/image/lululemon/70634?$swatch$"
+               },
+               "price": {
+                "currencyCode": "USD",
+                "listPrice": 98,
+                "salePrice": 49
+               },
+               "availability": {
+                "isAvailable": true,
+                "fulfillmentType": "ship"
+               }
+              }
+             ],
+             "sizes": [
+              {
+               "label": "0"
+              },
+              {
+               "label": "14"
+              },
+              {
+               "label": "2"
+              },
+              {
+               "label": "4"
+              },
+              {
+               "label": "6"
+              },
+              {
+               "label": "12"
+              },
+              {
+               "label": "8"
+              },
+              {
+               "label": "10"
+              }
+             ],
+             "activities": [
+              "Casual",
+              "Dance",
+              "Travel"
+             ]
+            }
+           },
+           {
+            "id": "n14uwk",
+            "type": "category-page-data",
+            "attributes": {
+             "title": "Women's Clothes | lululemon",
+             "description": "lululemon women's run, training, and yoga gear to keep you covered and comfortable no matter how you like to sweat. Shop athleisure and activewear for women.",
+             "canonicalUrl": "/c/women-clothes/n14uwk",
+             "robots": "index, follow, noodp, noydir",
+             "copyright": "lululemon athletica",
+             "ogTitle": "Women's Clothes | lululemon",
+             "ogDescription": "lululemon women's run, training, and yoga gear to keep you covered and comfortable no matter how you like to sweat. Shop athleisure and activewear for women.",
+             "ogLocale": "en_us",
+             "ogSiteName": "lululemon",
+             "ogUrl": "/c/women-clothes/n14uwk",
+             "ogImage": "https://api.lululemon.com/favicon.ico",
+             "hrefLangs": [
+              {
+               "rel": "alternate",
+               "hreflang": "en-US",
+               "href": "https://shop.lululemon.com/c/women-clothes/n14uwk"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "x-default",
+               "href": "https://shop.lululemon.com/c/women-clothes/n14uwk"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-CA",
+               "href": "https://shop.lululemon.com/en-ca/c/women-clothes/n14uwk"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "fr-CA",
+               "href": "https://shop.lululemon.com/fr-ca/c/women-clothes/n14uwk"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-IE",
+               "href": "https://www.eu.lululemon.com/en-lu/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-CH",
+               "href": "https://www.eu.lululemon.com/en-ch/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-IN",
+               "href": "https://www.lululemon.com.hk/en-in/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-MY",
+               "href": "https://www.lululemon.com.hk/en-my/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "fr-CH",
+               "href": "https://www.eu.lululemon.com/fr-ch/c/femmes"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-TH",
+               "href": "https://www.lululemon.com.hk/en-th/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-CZ",
+               "href": "https://www.eu.lululemon.com/en-cz/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-PH",
+               "href": "https://www.lululemon.com.hk/en-ph/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-VN",
+               "href": "https://www.lululemon.com.hk/en-vn/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "de-CH",
+               "href": "https://www.eu.lululemon.com/de-ch/c/frauen"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "ja-JP",
+               "href": "https://www.lululemon.co.jp/ja-jp/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-PL",
+               "href": "https://www.eu.lululemon.com/en-pl/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "de-DE",
+               "href": "https://www.lululemon.de/de-de/c/frauen"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-NL",
+               "href": "https://www.eu.lululemon.com/en-nl/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-NO",
+               "href": "https://www.eu.lululemon.com/en-no/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-DE",
+               "href": "https://www.lululemon.de/en-de/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "zh-HK",
+               "href": "https://www.lululemon.com.hk/zh-hk/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "zh-TW",
+               "href": "https://www.lululemon.com.hk/zh-tw/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-FI",
+               "href": "https://www.eu.lululemon.com/en-fi/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-HK",
+               "href": "https://www.lululemon.com.hk/en-hk/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-TW",
+               "href": "https://www.lululemon.com.hk/en-tw/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "es-ES",
+               "href": "https://www.lululemon.es/es-es/c/mujer"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-DK",
+               "href": "https://www.eu.lululemon.com/en-dk/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-LU",
+               "href": "https://www.eu.lululemon.com/en-lu/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "es-MX",
+               "href": "https://www.lululemon.mx/es-mx/c/mujer"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-NZ",
+               "href": "https://www.lululemon.co.nz/en-nz/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-FR",
+               "href": "https://www.lululemon.fr/en-fr/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-SE",
+               "href": "https://www.eu.lululemon.com/en-se/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-SG",
+               "href": "https://www.lululemon.com.hk/en-sg/c/women"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "de-LU",
+               "href": "https://www.eu.lululemon.com/de-lu/c/frauen"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "tr-TR",
+               "href": "https://www.lululemon.com.tr/tr-tr/c/kadin"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "fr-LU",
+               "href": "https://www.eu.lululemon.com/fr-lu/c/femmes"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "fr-FR",
+               "href": "https://www.lululemon.fr/fr-fr/c/femmes"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-GB",
+               "href": "https://www.lululemon.co.uk/en-gb/c/womens"
+              },
+              {
+               "rel": "alternate",
+               "hreflang": "en-ID",
+               "href": "https://www.lululemon.com.hk/en-id/c/women"
+              }
+             ]
+            },
+            "links": {
+             "related": {
+              "self": "/c/women-clothes/n14uwk",
+              "next": "/c/women-clothes/n14uwk?page=2",
+              "prev": null
+             }
+            }
+           },
+           "<37 more products trimmed>"
+          ],
+          "meta": {
+           "analyticsQueryId": "RPnukAxj60"
+          }
+         }
+        ],
+        "pageParams": [
+         null
+        ]
+       },
+       "status": "success"
+      },
+      "queryKey": [
+       "catalogPageData",
+       "cdp",
+       {
+        "hash": "n14uwk",
+        "slug": "women-clothes",
+        "offset": 0,
+        "pageSize": 40
+       }
+      ],
+      "queryHash": "[\"catalogPageData\",\"cdp\",{\"hash\":\"n14uwk\",\"offset\":0,\"pageSize\":40,\"slug\":\"women-clothes\"}]"
+     },
+     {
+      "queryKey": [
+       "microcopyData",
+       "j9cxqjc2zykv",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "cdp-contentful-data",
+       {
+        "cdpHash": "n14uwk",
+        "isContentfulPreviewEnabled": false,
+        "locale": "en-US",
+        "unifiedId": "women-clothes"
+       }
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "ldFlagsData",
+       "67b90809c409ac09ae304943",
+       "en-us"
+      ],
+      "state": "<trimmed>"
+     },
+     {
+      "queryKey": [
+       "featuredCategories",
+       {
+        "locale": "en-us",
+        "cdpHash": "n14uwk",
+        "limit": 6
+       }
+      ],
+      "state": "<trimmed>"
+     }
+    ]
+   }
+  }
+ }
+}
