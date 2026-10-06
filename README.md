@@ -36,7 +36,7 @@ Results go to stdout. Progress, warnings and errors (`error: <message>`) go to s
 Target $75.00 · snapshot 2026-10-06T12:00:00Z
 
 #1  Total $75.00 ($0.00 below target)
-  2 × Align High-Rise Pant 25"  $25.00 each  [stock cap 2: low-stock count]
+  3 × Align High-Rise Pant 25"  $25.00 each  [stock cap 3: low-stock count]
       Black: 4, 6 · True Navy: 2
       https://shop.lululemon.com/p/...
 ```

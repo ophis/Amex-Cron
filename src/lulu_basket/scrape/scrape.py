@@ -54,14 +54,15 @@ def scrape(target_cents: int, fetcher: Fetcher, log: Callable[[str], None]) -> S
         skus.extend(_keep_eligible(product, raw_skus, target_cents, excluded))
         if number % PROGRESS_EVERY == 0 or number == len(wanted):
             log(f"product pages {number}/{len(wanted)}")
+    counts = ", ".join(f"{reason} {excluded[reason]}" for reason in _EXCLUSION_ORDER)
     if not skus:
+        log(f"excluded SKUs: {counts}")
         raise ScrapeError("no eligible SKUs after filtering")
 
     log(
         f"products found {len(products)}, product pages fetched {len(wanted)}, "
         f"SKUs kept {len(skus)}"
     )
-    counts = ", ".join(f"{reason} {excluded[reason]}" for reason in _EXCLUSION_ORDER)
     log(f"excluded SKUs: {counts}")
     uncounted = sum(1 for s in skus if s.cap_source == CAP_LOW_STOCK_NO_COUNT)
     if uncounted:
@@ -78,20 +79,27 @@ def _crawl_categories(fetcher: Fetcher, log: Callable[[str], None]) -> dict[str,
     for name, path in CATEGORIES:
         first_url = BASE_URL + path
         page = _fetch_category_page(fetcher, first_url)
-        expected = ceil(page.total_count / PAGE_SIZE)
+        total_count = page.total_count
+        expected = ceil(total_count / PAGE_SIZE)
         number = 1
         while True:
             log(f"{name} page {number}/{expected}: {len(page.products)} listed")
             for product in page.products:
                 products.setdefault(product.id, product)
             if not page.has_next:
+                if number * PAGE_SIZE < total_count - PAGE_SIZE:
+                    raise ScrapeError(f"pagination ended early: {_page_url(first_url, number)}")
                 break
             number += 1
-            url = f"{first_url}?page={number}"
+            url = _page_url(first_url, number)
             if number > expected + EXTRA_PAGES:
                 raise ScrapeError(f"pagination did not terminate: {url}")
             page = _fetch_category_page(fetcher, url)
     return products
+
+
+def _page_url(first_url: str, number: int) -> str:
+    return first_url if number == 1 else f"{first_url}?page={number}"
 
 
 def _fetch_category_page(fetcher: Fetcher, url: str) -> CategoryPage:
@@ -124,7 +132,8 @@ def _keep_eligible(
         if not isinstance(size, str) or not size:
             raise _missing(f"skus[{index}].size", product)
         price = raw.get("price")
-        price = price if isinstance(price, dict) else {}
+        if not isinstance(price, dict):
+            raise _missing(f"skus[{index}].price", product)
         sale_price = price.get("salePrice")
         price_cents = parse_price_cents(
             price.get("listPrice") if sale_price is None else sale_price,
@@ -139,6 +148,8 @@ def _keep_eligible(
             excluded[_UNAVAILABLE] += 1
             continue
         inseam = raw.get("inseam")
+        if inseam is not None and (not isinstance(inseam, str) or not inseam):
+            raise _missing(f"skus[{index}].inseam", product)
         kept.append(
             Sku(
                 product_id=product.id,

@@ -36,8 +36,8 @@ def url_of(product):
     return BASE_URL + product["attributes"]["url"]
 
 
-def run(site, target=TARGET, delay=0, sleeps=None):
-    logs = []
+def run(site, target=TARGET, delay=0, sleeps=None, logs=None):
+    logs = [] if logs is None else logs
     sleep = (lambda seconds: None) if sleeps is None else sleeps.append
     snapshot = scrape(target, Fetcher(site.http_get, sleep, delay), logs.append)
     return snapshot, logs
@@ -118,6 +118,25 @@ def test_pagination_limit_is_ceil_total_over_40_plus_2(fake_site, total_count, p
     refused = f"{BASE_URL}{WOMEN}?page={limit + 1}"
     assert error_of(fake_site) == f"pagination did not terminate: {refused}"
     assert refused not in fake_site.requests
+
+
+@pytest.mark.parametrize(
+    "total_count, pages, ended_early",
+    [(80, 1, False), (81, 1, True), (120, 2, False), (121, 2, True), (1130, 1, True)],
+)
+def test_pagination_stopping_short_of_total_count_fails(fake_site, total_count, pages, ended_early):
+    product = fake_site.product("p1")
+    fake_site.add_category(
+        WOMEN, [[] for _ in range(pages - 1)] + [[product]], total_count=total_count
+    )
+    fake_site.add_product(product, [sku()])
+    if not ended_early:
+        snapshot, _ = run(fake_site)
+        assert [s.product_id for s in snapshot.skus] == ["p1"]
+        return
+    last = BASE_URL + WOMEN + ("" if pages == 1 else f"?page={pages}")
+    assert error_of(fake_site) == f"pagination ended early: {last}"
+    assert BASE_URL + MEN not in fake_site.requests
 
 
 def test_missing_continuation_page_fails_the_scrape(fake_site):
@@ -238,6 +257,7 @@ def test_price_at_target_is_kept(fake_site):
     [
         ({}, "4"),
         ({"inseam": '28"'}, '4 / 28"'),
+        ({"inseam": ABSENT}, "4"),
         ({"size": "ONE SIZE"}, "ONE SIZE"),
     ],
 )
@@ -325,6 +345,32 @@ def test_kept_sku_missing_color_or_size_fails(fake_site, overrides, path):
     )
 
 
+@pytest.mark.parametrize("inseam", ["", 28, False, ['28"']])
+def test_kept_sku_with_malformed_inseam_fails(fake_site, inseam):
+    product = shop(fake_site, [sku(available=False), sku(inseam=inseam)])
+    assert error_of(fake_site) == f"missing field skus[1].inseam: product p1 on {url_of(product)}"
+
+
+@pytest.mark.parametrize("price", [ABSENT, None, "50", 50, ["50"]])
+def test_kept_sku_with_non_dict_price_fails(fake_site, price):
+    product = shop(fake_site, [sku(price=price)])
+    assert error_of(fake_site) == f"missing field skus[0].price: product p1 on {url_of(product)}"
+
+
+def test_final_sale_sku_without_a_color_is_excluded_not_rejected(fake_site):
+    shop(fake_site, [sku(isFinalSale=True, color=ABSENT), sku(color={"name": "Kept"})])
+    snapshot, logs = run(fake_site)
+    assert [s.color for s in snapshot.skus] == ["Kept"]
+    assert "excluded SKUs: final sale 1, unavailable 0, missing flag 0, over target 0" in logs
+
+
+def test_color_is_validated_before_the_price_comparison(fake_site):
+    product = shop(fake_site, [sku(color=ABSENT, price={"listPrice": "80", "salePrice": None})])
+    assert error_of(fake_site) == (
+        f"missing field skus[0].color.name: product p1 on {url_of(product)}"
+    )
+
+
 @pytest.mark.parametrize(
     "price, shown",
     [
@@ -333,7 +379,6 @@ def test_kept_sku_missing_color_or_size_fails(fake_site, overrides, path):
         ({"listPrice": "50", "salePrice": "free"}, "'free'"),
         ({"listPrice": None, "salePrice": None}, "None"),
         ({}, "None"),
-        (ABSENT, "None"),
     ],
 )
 def test_kept_sku_with_bad_price_fails(fake_site, price, shown):
@@ -356,6 +401,13 @@ def test_no_eligible_skus_fails(fake_site):
 def test_no_eligible_skus_when_every_product_is_prefiltered(fake_site):
     fake_site.add_category(WOMEN, [[fake_site.product("p1", colors=[(80, True)])]])
     assert error_of(fake_site) == "no eligible SKUs after filtering"
+
+
+def test_no_eligible_skus_logs_the_exclusion_counts_before_failing(fake_site):
+    shop(fake_site, [sku(available=False), sku(isFinalSale=True), sku(isFinalSale=ABSENT)])
+    logs = []
+    assert error_of(fake_site, logs=logs) == "no eligible SKUs after filtering"
+    assert logs[-1] == "excluded SKUs: final sale 1, unavailable 1, missing flag 1, over target 0"
 
 
 def test_products_without_skus_contribute_nothing(fake_site):
@@ -454,6 +506,7 @@ def test_crawl_of_real_samples(fake_site, load_fixture):
         if query["queryKey"][0] == "catalogPageData"
     )["state"]["data"]["pages"][0]
     del page["data"]["relationships"]["products"]["links"]["next"]
+    page["data"]["attributes"]["totalCount"] = 3
     fake_site.add_page(BASE_URL + WOMEN, category)
 
     def product_page(fixture, product_id):

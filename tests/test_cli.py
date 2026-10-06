@@ -236,6 +236,11 @@ def case_zero_eligible(site):
     return site.http_get, "error: no eligible SKUs after filtering"
 
 
+def case_pagination_ended_early(site):
+    site.add_category(WOMEN, [[site.product("p1")]], total_count=500)
+    return site.http_get, f"error: pagination ended early: {BASE_URL}{WOMEN}"
+
+
 FAILURES = [
     case_blocked_403,
     case_access_denied_page,
@@ -247,6 +252,7 @@ FAILURES = [
     case_bad_sku_price,
     case_bad_category_price,
     case_zero_eligible,
+    case_pagination_ended_early,
 ]
 
 
@@ -299,6 +305,21 @@ def test_unwritable_snapshot_path_exits_1_with_the_reason(fake_site, tmp_path, c
     assert err.splitlines()[-1] == (
         f"error: cannot write snapshot {path}: {os.strerror(errno.ENOENT)}"
     )
+
+
+@pytest.mark.parametrize("command", ["scrape", "run"])
+def test_unencodable_site_text_exits_1_with_the_reason(fake_site, tmp_path, capsys, command):
+    stock(fake_site, ("a", "Bad \ud800 name", 25))
+    path = tmp_path / "snapshot.json"
+    path.write_bytes(OLD_BYTES)
+    code, out, err = invoke(
+        capsys, command, "--snapshot", str(path), "--delay", "0", http_get=fake_site.http_get
+    )
+    assert code == 1
+    assert out == ""
+    assert err.splitlines()[-1].startswith(f"error: cannot write snapshot {path}: ")
+    assert os.listdir(tmp_path) == ["snapshot.json"]
+    assert path.read_bytes() == OLD_BYTES
 
 
 # solve

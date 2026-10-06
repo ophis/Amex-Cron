@@ -1,3 +1,4 @@
+import errno
 import json
 import os
 
@@ -143,7 +144,7 @@ def test_write_overwrites_existing_and_leaves_no_temp_file(tmp_path):
     assert load_snapshot(path).skus == ()
 
 
-def test_write_failure_removes_temp_and_keeps_existing_file(tmp_path, monkeypatch):
+def test_write_failure_is_a_snapshot_error_and_keeps_existing_file(tmp_path, monkeypatch):
     path = tmp_path / "snapshot.json"
     path.write_bytes(b"old")
 
@@ -151,8 +152,32 @@ def test_write_failure_removes_temp_and_keeps_existing_file(tmp_path, monkeypatc
         raise OSError("disk on fire")
 
     monkeypatch.setattr(os, "replace", fail_replace)
-    with pytest.raises(OSError, match="disk on fire"):
+    with pytest.raises(SnapshotError) as exc:
         write_snapshot(path, Snapshot("2026-10-06T12:00:00Z", 7500, ()))
+    assert str(exc.value) == f"cannot write snapshot {path}: disk on fire"
+    assert [p.name for p in tmp_path.iterdir()] == ["snapshot.json"]
+    assert path.read_bytes() == b"old"
+
+
+def test_write_to_a_missing_directory_gives_the_os_reason(tmp_path):
+    path = tmp_path / "missing" / "snapshot.json"
+    with pytest.raises(SnapshotError) as exc:
+        write_snapshot(path, Snapshot("2026-10-06T12:00:00Z", 7500, ()))
+    assert str(exc.value) == f"cannot write snapshot {path}: {os.strerror(errno.ENOENT)}"
+
+
+def test_write_of_unencodable_text_is_a_snapshot_error_and_keeps_existing_file(tmp_path):
+    path = tmp_path / "snapshot.json"
+    path.write_bytes(b"old")
+    snap = Snapshot(
+        "2026-10-06T12:00:00Z",
+        7500,
+        (Sku("p1", "Bad \ud800 name", "https://x/p/n/p1", "Black", "4", 6800, None, None),),
+    )
+    with pytest.raises(SnapshotError) as exc:
+        write_snapshot(path, snap)
+    assert str(exc.value).startswith(f"cannot write snapshot {path}: ")
+    assert "surrogates not allowed" in str(exc.value)
     assert [p.name for p in tmp_path.iterdir()] == ["snapshot.json"]
     assert path.read_bytes() == b"old"
 

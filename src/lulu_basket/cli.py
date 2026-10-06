@@ -4,7 +4,7 @@ import sys
 import time
 from collections.abc import Callable
 
-from lulu_basket.errors import SnapshotError, SolveError, ToolError
+from lulu_basket.errors import SolveError, ToolError
 from lulu_basket.scrape.fetch import Fetcher, HttpGet, curl_http_get
 from lulu_basket.scrape.scrape import scrape
 from lulu_basket.snapshot import load_snapshot, write_snapshot
@@ -38,12 +38,7 @@ def main(
 def _scrape(args: argparse.Namespace, http_get: HttpGet | None, sleep: Callable[[float], None]):
     fetcher = Fetcher(curl_http_get() if http_get is None else http_get, sleep, args.delay)
     snapshot = scrape(args.target, fetcher, lambda line: print(line, file=sys.stderr))
-    try:
-        write_snapshot(args.snapshot, snapshot)
-    except OSError as exc:
-        raise SnapshotError(
-            f"cannot write snapshot {args.snapshot}: {exc.strerror or exc}"
-        ) from exc
+    write_snapshot(args.snapshot, snapshot)
 
 
 def _solve(args: argparse.Namespace) -> str:

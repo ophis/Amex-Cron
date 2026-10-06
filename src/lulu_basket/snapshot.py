@@ -51,6 +51,14 @@ def write_snapshot(path: str | os.PathLike, snap: Snapshot) -> None:
             for s in snap.skus
         ],
     }
+    try:
+        _write_atomically(path, doc)
+    except (OSError, ValueError) as exc:
+        reason = (exc.strerror if isinstance(exc, OSError) else None) or exc
+        raise SnapshotError(f"cannot write snapshot {path}: {reason}") from exc
+
+
+def _write_atomically(path: str | os.PathLike, doc: dict) -> None:
     directory = os.path.dirname(os.path.abspath(path))
     fd, tmp = tempfile.mkstemp(dir=directory, prefix=".snapshot-", suffix=".tmp")
     try:
