@@ -2,7 +2,7 @@
 
 Requirement: TASK-192 build input (PRD `Product Design/2026-10-05-1433-TASK-168-lululemon-basket-filler.md`, phase P1).
 
-RESUME: phase=S7 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron branch=TASK-192-lululemon base_ref=f3596732635451aeca1e8274d8d4d5670c7ef86c review_round=0 spec_file=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron/docs/.autopilot/2026-10-06-lululemon-basket-filler-spec.md
+RESUME: phase=S9 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron branch=TASK-192-lululemon base_ref=f3596732635451aeca1e8274d8d4d5670c7ef86c review_round=1 spec_file=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron/docs/.autopilot/2026-10-06-lululemon-basket-filler-spec.md
 
 ## Progress
 
@@ -27,6 +27,11 @@ RESUME: phase=S7 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-
 - User instruction (03:29 EDT): stop live experiments, no more requests to lululemon.com, no retries/pacing aimed at evading the block; finish without the live check and report the block and open question. Slow-paced experiment cancelled before it sent any request; last live request 03:12:49 EDT.
 - decision(400 retry): revert d552959 and restore PRD retry policy (3 attempts, 5/15 s, 400 fails at once) - the 400 retry was aimed at getting past Akamai's block, which the user ruled out; dissent: none
 - S7 fix 2 (pre-fix HEAD f57d51e; fix 1 range bc82799..ef732e8): producer a7d455d3467a68114 continued to revert d552959 + README block note
+- S7 fix 2: 0dc957c revert + d35d6c8 (400 fails at once; README block note); 644 passed
+- S7 r1: re-review of touched lenses [correctness,requirement-fidelity,doc,code-quality,performance,test] over bc82799..HEAD; architecture carries PASS
+- S7 r1: correctness=PASS requirement-fidelity=PASS doc=PASS code-quality=PASS performance=PASS test=PASS (architecture carries r0 PASS) -> converged
+- S8: skipped per build input (commits kept)
+- S9: residual non-blockers: P1 live exit check not run (user instruction); pagination guard tolerates one missing page by design; inseam validated only on kept SKUs; shoes not crawled (D1, confirm with user)
 
 ## Implementation plan
 
