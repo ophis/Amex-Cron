@@ -89,7 +89,7 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
 
 ### Crawl and filter (`scrape/scrape.py`)
 
-1. For each category in D1 order: fetch page 1, then `?page=2, 3, …` while `has_next`; abort with `pagination did not terminate: <url>` beyond `ceil(totalCount/40) + 2` pages (`totalCount` read from page 1).
+1. For each category in D1 order: fetch page 1, then `?page=2, 3, …` while `has_next`; abort with `pagination did not terminate: <url>` beyond `ceil(totalCount/40) + 2` pages (`totalCount` read from page 1). A category whose crawl stops after `n` pages with `n × 40 < totalCount − 40` → `pagination ended early: <url of page n>` (guards against a vanished `links.next` silently truncating the crawl; the 40-product slack absorbs live count drift).
 2. Dedupe products by `id`, keeping first seen. Zero products → `no products found on category pages`.
 3. Pre-filter: keep products with `min_available_price_cents` ≤ target, in first-seen order; fetch each product page.
 4. Classify each SKU, first match wins, counting each reason:
@@ -99,9 +99,9 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
    - otherwise require `color.name` and `size` (non-empty str) and parse its price (`salePrice` if non-null, else `listPrice`) → else FR-3 error; price > target → excluded: over target;
    - cap: `lowStockMessage` is a str containing digits → first integer (0 → excluded: unavailable), source `low_stock_count`; else `isLowStock is True` → cap 1, source `low_stock_no_count`; else no cap.
    - kept → snapshot SKU: `product_id`, `name` (category name), `url` (absolute product URL), `color` (`color.name`), `size` (`size`, plus ` / <inseam>` when inseam is non-null), `price_cents`, `cap`, `cap_source`.
-5. Zero kept SKUs → `no eligible SKUs after filtering`.
+5. Zero kept SKUs → log the `excluded SKUs:` line (step 6), then fail with `no eligible SKUs after filtering`.
 6. stderr: progress (one line per category page, one per 25 product pages and at the end), a summary (products found, product pages fetched, SKUs kept) and one line `excluded SKUs: final sale <n>, unavailable <n>, missing flag <n>, over target <n>`; if any `low_stock_no_count` SKU: `warning: <n> low-stock SKUs have no count in lowStockMessage; capped at 1`.
-7. Write the snapshot atomically (`tempfile.mkstemp` in the same dir + `os.replace`; the temp file is removed on failure). On any `ScrapeError` nothing is written, so an existing snapshot is unchanged.
+7. Write the snapshot atomically (`tempfile.mkstemp` in the same dir + `os.replace`; the temp file is removed on failure). Any `OSError` or `ValueError` while writing → `SnapshotError` `cannot write snapshot <path>: <reason>`. On any `ScrapeError` nothing is written, so an existing snapshot is unchanged.
 
 ## Snapshot (`snapshot.py`), schema 1
 
@@ -131,7 +131,7 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
    Target $75.00 · snapshot 2026-10-06T12:00:00Z
 
    #1  Total $75.00 ($0.00 below target)
-     2 × Align High-Rise Pant 25"  $25.00 each  [stock cap 2: low-stock count]
+     3 × Align High-Rise Pant 25"  $25.00 each  [stock cap 3: low-stock count]
          Black: 4, 6 · True Navy: 2
          https://shop.lululemon.com/p/...
    ```

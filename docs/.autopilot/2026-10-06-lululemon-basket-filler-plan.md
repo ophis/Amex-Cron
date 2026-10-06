@@ -2,7 +2,7 @@
 
 Requirement: TASK-192 build input (PRD `Product Design/2026-10-05-1433-TASK-168-lululemon-basket-filler.md`, phase P1).
 
-RESUME: phase=S6 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron branch=TASK-192-lululemon base_ref=f3596732635451aeca1e8274d8d4d5670c7ef86c review_round=0 spec_file=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron/docs/.autopilot/2026-10-06-lululemon-basket-filler-spec.md
+RESUME: phase=S7 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron branch=TASK-192-lululemon base_ref=f3596732635451aeca1e8274d8d4d5670c7ef86c review_round=0 spec_file=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-Cron/docs/.autopilot/2026-10-06-lululemon-basket-filler-spec.md
 
 ## Progress
 
@@ -18,6 +18,11 @@ RESUME: phase=S6 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-
 - S6 live run 1: exit 1 `request failed: HTTP 400: …women-clothes…?page=15` (fail-safe held). Reproduced: transient per-page 400 `GE401001`, same URL 200 seconds later; not cookie/session (fails with cleared cookies and fresh sessions too).
 - decision(transient 400): retry HTTP 400 and widen backoff to 4 attempts (5/15/45 s) over failing fast - the 400s are transient, failing fast made the tool unusable; spec Fetch updated; dissent: none
 - S7 panel: core=[correctness,requirement-fidelity,doc] +optional=[architecture,code-quality,performance,test] transport=Workflow
+- S6 fix: d552959 retries 400 (4 attempts, 5/15/45 s); `uv run pytest` 620 passed; live run 2 started
+- S7 r0: correctness=PASS requirement-fidelity=PASS doc=PASS architecture=PASS code-quality=PASS performance=PASS test=PASS -> no blockers; non-blockers raised by 3 lenses: pagination can end early silently (missing links.next), zero-eligible error hides exclusion counts; P1 live exit check not yet met
+- S6 live run 2: exit 1 at women-clothes ?page=13, 400 on all 4 attempts. 400 JSON served by AkamaiGHost; same URL recovered after ~30 s idle -> edge rate throttling, not a page fault. Measuring onset at 4 s pacing.
+- S6 live: after run 2, a 2-min cooldown still gave 400 on category pages, and product page + homepage also 400 (03:12 EDT) -> client-wide penalty; live traffic paused. Open question: rate-based (pacing fixes it) vs request-count bot detection (needs a browser, PRD risk).
+- S7 fix 1 (pre-fix HEAD bc82799): fresh producer a7d455d3467a68114 for adopted non-blockers correctness#1,#2,#4 / requirement-fidelity#2,#3 / architecture#4,#6 / code-quality#3 + Task 6/7 minors (inseam, price message, test gaps, README sample)
 
 ## Implementation plan
 
