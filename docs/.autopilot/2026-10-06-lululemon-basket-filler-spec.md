@@ -29,6 +29,7 @@ README.md                 usage, snapshot format, limits
 src/lulu_basket/
   __main__.py             python -m lulu_basket
   cli.py                  argparse; scrape / solve / run
+  errors.py               ToolError base; ScrapeError, SnapshotError, SolveError (cli maps ToolError → exit 1)
   snapshot.py             Snapshot + Sku dataclasses, atomic write, load + validate   (the only interface between layers)
   scrape/fetch.py         HTTP: curl_cffi session, delay, retries, block detection
   scrape/parse.py         __NEXT_DATA__ extraction; category-page and product-page parsing (pure)
@@ -39,7 +40,7 @@ src/lulu_basket/
 tests/                    pytest; never touches the network
 ```
 
-**Layer rule (FR-4):** nothing under `lulu_basket/solve/` imports `lulu_basket.scrape` or `curl_cffi`, or names any site field; `lulu_basket.snapshot` is the only module both layers share.
+**Layer rule (FR-4):** nothing under `lulu_basket/solve/` imports `lulu_basket.scrape` or `curl_cffi`, or names any site field; `lulu_basket.snapshot` and `lulu_basket.errors` are the only modules both layers share.
 
 ## CLI
 
@@ -51,7 +52,7 @@ tests/                    pytest; never touches the network
 - Exit codes: `0` success (incl. no feasible combination); `1` scrape or solve failure; `2` usage error (argparse).
 - Errors go to stderr as `error: <message>`; progress and warnings go to stderr; only `solve` results go to stdout.
 - `run` = `scrape` then `solve` with the same `--target`/`--snapshot`; a failed `scrape` exits 1 before `solve` prints anything (FR-8).
-- `cli.main(argv=None, *, http_get=None, sleep=time.sleep) -> int`; `http_get(url) -> (status, text)` replaces the real transport (tests inject fakes). The console script exits with its return value.
+- `cli.main(argv=None, *, http_get=None, sleep=time.sleep) -> int`; `http_get(url) -> (status, text)` replaces the real transport (tests inject fakes) and raises `fetch.TransportError` on a transport failure; the real adapter maps `curl_cffi` errors to it. `cli.main` is the only place that turns `ToolError` into exit 1. The console script exits with its return value.
 
 ## Scrape
 
@@ -73,10 +74,10 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
 
 ### Fetch (`scrape/fetch.py`)
 
-- One `curl_cffi.requests.Session(impersonate="chrome")` per scrape, timeout 30 s, requests strictly sequential.
+- One `curl_cffi.requests.Session(impersonate="chrome")` per scrape, timeout 30 s, TLS verification on, requests strictly sequential. Redirects are followed (slugs 301); a final URL not on `https://shop.lululemon.com` → `ScrapeError` `redirected off-site: <url>` (no retry).
 - Sleep `delay` before each request except the first.
 - Up to 3 attempts per URL, sleeping 5 s then 15 s between attempts. Retry on: transport error/timeout, HTTP 403, 429, 5xx, or a 200 body containing `Access Denied` without `__NEXT_DATA__`. Any other non-200 (e.g. 404) fails at once.
-- Final failure raises `ScrapeError`: blocked (last attempt 403 or Access-Denied page) → `blocked by site after 3 attempts: <url>`; otherwise → `request failed: <HTTP status | error>: <url>`.
+- Final failure raises `ScrapeError` (`lulu_basket.errors`): blocked (last attempt 403 or Access-Denied page) → `blocked by site after 3 attempts: <url>`; otherwise → `request failed: <HTTP status | error>: <url>`.
 
 ### Parse (`scrape/parse.py`, pure, raises `ScrapeError`)
 
@@ -87,7 +88,7 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
 
 ### Crawl and filter (`scrape/scrape.py`)
 
-1. For each category in D1 order: fetch page 1, then `?page=2, 3, …` while `has_next`; abort with `pagination did not terminate: <url>` beyond `ceil(totalCount/40) + 2` pages.
+1. For each category in D1 order: fetch page 1, then `?page=2, 3, …` while `has_next`; abort with `pagination did not terminate: <url>` beyond `ceil(totalCount/40) + 2` pages (`totalCount` read from page 1).
 2. Dedupe products by `id`, keeping first seen. Zero products → `no products found on category pages`.
 3. Pre-filter: keep products with `min_available_price_cents` ≤ target, in first-seen order; fetch each product page.
 4. Classify each SKU, first match wins, counting each reason:
@@ -99,7 +100,7 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
    - kept → snapshot SKU: `product_id`, `name` (category name), `url` (absolute product URL), `color` (`color.name`), `size` (`size`, plus ` / <inseam>` when inseam is non-null), `price_cents`, `cap`, `cap_source`.
 5. Zero kept SKUs → `no eligible SKUs after filtering`.
 6. stderr: progress (one line per category page, one per 25 product pages and at the end), a summary (products found, product pages fetched, SKUs kept) and one line `excluded SKUs: final sale <n>, unavailable <n>, missing flag <n>, over target <n>`; if any `low_stock_no_count` SKU: `warning: <n> low-stock SKUs have no count in lowStockMessage; capped at 1`.
-7. Write the snapshot atomically (temp file in the same dir + `os.replace`). On any `ScrapeError` nothing is written, so an existing snapshot is unchanged.
+7. Write the snapshot atomically (`tempfile.mkstemp` in the same dir + `os.replace`; the temp file is removed on failure). On any `ScrapeError` nothing is written, so an existing snapshot is unchanged.
 
 ## Snapshot (`snapshot.py`), schema 1
 
@@ -122,8 +123,8 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
 
 1. `target > snapshot.target_cents` → error `target <t> exceeds snapshot target <s>; re-run scrape --target <t>` (FR-6).
 2. **Items** (`solve/items.py`): group SKUs with `price_cents ≤ target` by `(product_id, price_cents)`; name and url from the first SKU. Item cap: none if any SKU has no cap, else the max SKU cap, with that SKU's source (`low_stock_count` wins ties). Items sorted by `(product_id, price_cents)`.
-3. **Search** (`solve/knapsack.py`): a combination assigns each item a count `0 ≤ n ≤ min(cap, target // price)`, not all zero, total ≤ target. Distinct = different item→count maps. Order: total desc → total count asc → key asc, key = the tuple of `(product_id, price_cents, n)` over items with `n > 0` in item order. Return the first 3 (fewer if fewer exist).
-   - Suggested algorithm: divide prices and target by `g = gcd(prices)`; with `T = target // g`, `K = T // min_price`, build suffix reachability sets over `(sum, count)` as Python-int bitsets (bit `sum*(K+1)+count`); then for `sum = T..1`, `count = 1..K` reachable from item 0, enumerate combinations by DFS (next item ascending, then count ascending) pruned by the suffix sets, stopping at 3. Memory is `O(items · T · K)` bits — fine for whole-dollar prices; not guarded.
+3. **Search** (`solve/knapsack.py`): a combination assigns each item a count `0 ≤ n ≤ min(cap, target // price)`, not all zero, total ≤ target; all `n` units of an item are the same SKU (hence the item cap is a single SKU's cap). Distinct = different item→count maps. Order: total desc → total count asc → key asc, key = the tuple of `(product_id, price_cents, n)` over items with `n > 0` in item order, compared as Python tuples (a prefix sorts first). Return the first 3 (fewer if fewer exist).
+   - Suggested algorithm: divide prices and target by `g = gcd(prices)`; with `T = target // g`, `K = T // min_price`, build suffix reachability sets over `(sum, count)` as Python-int bitsets (bit `sum*(K+1)+count`); then for `sum = T..1`, `count = 1..K` reachable from item 0, enumerate combinations by DFS (next item ascending, then count ascending) pruned by the suffix sets, stopping at 3. Memory is `O(items · T · K)` bits — fine for whole-dollar prices. Guard: `(T+1)·(K+1) > 1_000_000` → `SolveError` `search space too large (target <t>, price step <g> cents)`, exit 1.
 4. **Report** (`solve/report.py`), stdout:
    ```
    Target $75.00 · snapshot 2026-10-06T12:00:00Z
@@ -133,7 +134,7 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
          Black: 4, 6 · True Navy: 2
          https://shop.lululemon.com/p/...
    ```
-   Per item: count, name, unit price, cap note only when `n` equals a set item cap (`[stock cap <c>: low-stock count]` or `[stock cap <c>: low stock, no count]`), colors with their sizes per D5 (first-seen order), URL. Per combination: number, total, and `<gap> below target`. None → `No feasible combination.`, exit 0.
+   Site-sourced strings are printed with control characters removed. Per item: count, name, unit price, cap note only when `n` equals a set item cap (`[stock cap <c>: low-stock count]` or `[stock cap <c>: low stock, no count]`), colors with their sizes per D5 (first-seen order), URL. Per combination: number, total, and `<gap> below target`. None → `No feasible combination.`, exit 0.
 
 ## Tests (`uv run pytest`, no network)
 
@@ -151,6 +152,7 @@ Fixtures: real trimmed `__NEXT_DATA__` samples (1 category page with 3 products,
 - FR-9: `pyproject.toml` dependencies include `curl_cffi` and none of `scrapling`, `playwright`, `patchright`.
 - NFR-1: 500 random items (whole-dollar prices $5–$75, ~20% capped 1–3), target 7500 → items + search < 100 ms (best of 3).
 - Snapshot: round-trip; each invalid field → `SnapshotError`.
+- Hardening: off-site redirect → `redirected off-site`; search-space guard → exit 1; control characters in names are stripped from output.
 
 ## P1 exit check (manual, real network)
 
@@ -162,3 +164,5 @@ Fixtures: real trimmed `__NEXT_DATA__` samples (1 category page with 3 products,
 - Several hundred product pages of 1–2 MB each: a run takes tens of minutes and may hit rate limits.
 - Live category ordering can shift products across pages during a crawl, so a product can be missed.
 - Stock caps are inferred from low-stock flags only; real per-order limits are unknown.
+- One product delisted mid-crawl (404) aborts the whole scrape (D6); rerun.
+- Session reuse across hundreds of requests was not probed (each probe request used a fresh session); the P1 exit-check run validates it.
