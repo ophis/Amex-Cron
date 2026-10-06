@@ -14,6 +14,10 @@ RESUME: phase=S6 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-
 - S3 r0: architecture=PASS spec-fitness=PASS security=PASS -> converged; folded non-blockers: TransportError contract, errors module, search-space guard, same-SKU rule, prefix order, totalCount from page 1, off-site redirect check, control-char stripping, mkstemp temp file, risks (404 mid-crawl, session reuse)
 - decision(non-blockers skipped): no response-size cap, no price upper bound - local single-user tool, prices > target are dropped anyway; dissent: none
 - S5: 7 tasks done via SDD, each task-reviewed clean (commits 28daddc..6f13385); deferred minors kept in SDD ledger for S7
+- S6: `uv run pytest` 618 passed; CLI help smoke ok; live `run` started in background (P1 exit check)
+- S6 live run 1: exit 1 `request failed: HTTP 400: …women-clothes…?page=15` (fail-safe held). Reproduced: transient per-page 400 `GE401001`, same URL 200 seconds later; not cookie/session (fails with cleared cookies and fresh sessions too).
+- decision(transient 400): retry HTTP 400 and widen backoff to 4 attempts (5/15/45 s) over failing fast - the 400s are transient, failing fast made the tool unusable; spec Fetch updated; dissent: none
+- S7 panel: core=[correctness,requirement-fidelity,doc] +optional=[architecture,code-quality,performance,test] transport=Workflow
 
 ## Implementation plan
 
