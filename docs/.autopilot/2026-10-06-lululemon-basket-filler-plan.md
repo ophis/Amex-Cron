@@ -23,6 +23,10 @@ RESUME: phase=S7 worktree=/Users/francis/.agent-pm/work/TASK-192/src/ophis/Amex-
 - S6 live run 2: exit 1 at women-clothes ?page=13, 400 on all 4 attempts. 400 JSON served by AkamaiGHost; same URL recovered after ~30 s idle -> edge rate throttling, not a page fault. Measuring onset at 4 s pacing.
 - S6 live: after run 2, a 2-min cooldown still gave 400 on category pages, and product page + homepage also 400 (03:12 EDT) -> client-wide penalty; live traffic paused. Open question: rate-based (pacing fixes it) vs request-count bot detection (needs a browser, PRD risk).
 - S7 fix 1 (pre-fix HEAD bc82799): fresh producer a7d455d3467a68114 for adopted non-blockers correctness#1,#2,#4 / requirement-fidelity#2,#3 / architecture#4,#6 / code-quality#3 + Task 6/7 minors (inseam, price message, test gaps, README sample)
+- S7 fix 1: ef732e8 (643 passed).
+- User instruction (03:29 EDT): stop live experiments, no more requests to lululemon.com, no retries/pacing aimed at evading the block; finish without the live check and report the block and open question. Slow-paced experiment cancelled before it sent any request; last live request 03:12:49 EDT.
+- decision(400 retry): revert d552959 and restore PRD retry policy (3 attempts, 5/15 s, 400 fails at once) - the 400 retry was aimed at getting past Akamai's block, which the user ruled out; dissent: none
+- S7 fix 2 (pre-fix HEAD f57d51e; fix 1 range bc82799..ef732e8): producer a7d455d3467a68114 continued to revert d552959 + README block note
 
 ## Implementation plan
 

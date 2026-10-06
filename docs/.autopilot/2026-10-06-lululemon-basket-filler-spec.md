@@ -76,9 +76,8 @@ Blocked request: HTTP 403 from Akamai with body containing `Access Denied`, no `
 
 - One `curl_cffi.requests.Session(impersonate="chrome")` per scrape, timeout 30 s, TLS verification on, requests strictly sequential. Redirects are followed (slugs 301); a final URL not on `https://shop.lululemon.com` → `ScrapeError` `redirected off-site: <url>` (no retry).
 - Sleep `delay` before each request except the first.
-- Up to 4 attempts per URL, sleeping 5 s, 15 s, then 45 s between attempts. Retry on: transport error/timeout, HTTP 400, 403, 429, 5xx, or a 200 body containing `Access Denied` without `__NEXT_DATA__`. Any other non-200 (e.g. 404) fails at once.
-- HTTP 400 is retried because the site intermittently answers a valid category page with 400 `{"message": "Bad Request.", "errorCode": "GE401001"}` and serves the same URL with 200 seconds later (observed 2026-10-06: 3 of 22 category pages on first try; not cookie- or session-related).
-- Final failure raises `ScrapeError` (`lulu_basket.errors`): blocked (last attempt 403 or Access-Denied page) → `blocked by site after 4 attempts: <url>`; otherwise → `request failed: <HTTP status | error>: <url>`.
+- Up to 3 attempts per URL, sleeping 5 s then 15 s between attempts. Retry on: transport error/timeout, HTTP 403, 429, 5xx, or a 200 body containing `Access Denied` without `__NEXT_DATA__`. Any other non-200 (e.g. 404, and the 400 block response below) fails at once.
+- Final failure raises `ScrapeError` (`lulu_basket.errors`): blocked (last attempt 403 or Access-Denied page) → `blocked by site after 3 attempts: <url>`; otherwise → `request failed: <HTTP status | error>: <url>`.
 
 ### Parse (`scrape/parse.py`, pure, raises `ScrapeError`)
 
@@ -166,4 +165,4 @@ Fixtures: real trimmed `__NEXT_DATA__` samples (1 category page with 3 products,
 - Live category ordering can shift products across pages during a crawl, so a product can be missed.
 - Stock caps are inferred from low-stock flags only; real per-order limits are unknown.
 - One product delisted mid-crawl (404) aborts the whole scrape (D6); rerun.
-- Transient 400s that outlast the ~65 s retry window fail the scrape; rerun.
+- **Live block (observed 2026-10-06, P1 exit check not met):** Akamai (`server: AkamaiGHost`) answered with HTTP 400 `{"message": "Bad Request.", "errorCode": "GE401001"}` after 13–16 category-page requests at `--delay 1.0` (runs stopped at `?page=15`, `?page=13`; manual repros at 17). Short rests sometimes let single requests through, but after about 30 more requests the homepage and product pages also got 400 for this client. Unknown: rate limit or request-count bot detection. Getting past it, or deciding whether to proceed at all, is the user's call; the tool does not retry or pace around it.
